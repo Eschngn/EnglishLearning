@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6f8fc" />
+  <title>我的口语单词本</title>
+  <style>
+    :root{--bg:#f6f8fc;--surface:#fff;--ink:#172033;--muted:#6f7a90;--line:#e4e9f2;--primary:#536dfb;--primary-soft:#eef0ff;--shadow:0 12px 30px rgba(35,49,86,.08);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--bg);line-height:1.55}button,input{font:inherit}button{cursor:pointer}
+    .app-shell{width:min(100% - 32px,1120px);margin:auto;padding:28px 0 50px}header{margin-bottom:26px}.eyebrow{margin:0 0 6px;color:var(--primary);font-size:.82rem;font-weight:750;letter-spacing:.08em}h1,h2,p{margin-top:0}h1{margin-bottom:8px;font-size:clamp(1.75rem,4vw,2.6rem);letter-spacing:-.03em}.subtitle{margin:0;color:var(--muted)}
+    .toolbar{display:flex;gap:12px;align-items:center;margin-bottom:22px}.search-box{position:relative;flex:1}.search-box span{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted)}.search-box input{width:100%;border:1px solid var(--line);border-radius:12px;padding:13px 14px 13px 40px;background:var(--surface);outline:0}.search-box input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(83,109,251,.12)}.stats{display:flex;gap:8px;color:var(--muted);white-space:nowrap;font-size:.9rem}.stats strong{color:var(--ink)}
+    .word-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:18px}.word-card{display:flex;flex-direction:column;min-height:320px;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--surface);box-shadow:var(--shadow)}.card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.word{margin-bottom:2px;font-size:1.75rem;letter-spacing:-.03em}.ipa{margin-bottom:0;color:var(--muted);font-family:Georgia,serif;font-size:1rem}.speak-button{display:inline-grid;place-items:center;width:40px;height:40px;border:0;border-radius:50%;color:#3f56dd;background:var(--primary-soft);font-size:1.08rem}.speak-button:hover{background:#e0e4ff}.tags{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 13px}.tag{padding:4px 9px;border-radius:999px;color:#3f56dd;background:var(--primary-soft);font-size:.78rem;font-weight:700}.meaning{margin-bottom:17px;font-size:1rem}.example{margin-top:auto;padding:14px;border-left:3px solid var(--primary);border-radius:0 10px 10px 0;background:#fafbff}.example-label{margin-bottom:5px;color:var(--muted);font-size:.75rem;font-weight:750;letter-spacing:.05em;text-transform:uppercase}.example p{margin-bottom:5px;font-size:.98rem}.translation{margin-bottom:0!important;color:var(--muted);font-size:.88rem!important}.card-footer{margin-top:16px;color:var(--muted);font-size:.82rem}.empty{grid-column:1/-1;padding:50px 20px;border:1px dashed var(--line);border-radius:18px;color:var(--muted);text-align:center}
+    .pagination{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:26px}.page-button{min-width:38px;height:38px;padding:0 11px;border:1px solid var(--line);border-radius:10px;color:var(--ink);background:var(--surface);font-weight:700}.page-button:hover:not(:disabled),.page-button.active{border-color:var(--primary);color:#fff;background:var(--primary)}.page-button:disabled{cursor:not-allowed;opacity:.42}.page-label{margin:0 6px;color:var(--muted);font-size:.9rem}
+    @media(max-width:620px){.app-shell{width:min(100% - 22px,1120px);padding-top:20px}header{margin-bottom:20px}.toolbar{display:block}.stats{margin-top:10px}.word-card{min-height:0}.pagination{margin-top:20px}.page-label{display:none}}
+  </style>
+</head>
+<body>
+  <main class="app-shell">
+    <header><p class="eyebrow">SPEAKING NOTEBOOK</p><h1>我的口语单词本</h1><p class="subtitle">由我帮你持续整理，带着场景反复开口练习。</p></header>
+    <section class="toolbar" aria-label="单词筛选"><div class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="搜索单词、中文意思或场景…" autocomplete="off" /></div><div class="stats"><strong id="wordCount">8</strong> 个单词</div></section>
+    <section id="wordGrid" class="word-grid" aria-live="polite"></section><nav id="pagination" class="pagination" aria-label="单词分页"></nav>
+  </main>
+  <script>
+    // 之后你发给我的新单词，会由我直接补充到这个数组中。
+    const words=[
+      {word:"actually",ipa:"/ˈæk.tʃu.ə.li/",part:"副词 adverb",meaning:"实际上；说真的（用于补充真实情况或委婉纠正）",scene:"表达真实想法",example:"Actually, I’ve never tried it before.",translation:"说真的，我以前从来没试过。"},
+      {word:"pretty",ipa:"/ˈprɪt.i/",part:"副词 adverb",meaning:"相当；很（口语中加强语气）",scene:"描述程度",example:"It’s pretty cold today, so bring a jacket.",translation:"今天相当冷，所以带件夹克。"},
+      {word:"figure out",ipa:"/ˈfɪɡ.jɚ aʊt/",part:"短语 phrasal verb",meaning:"弄明白；想出办法",scene:"解决问题",example:"I’ll figure out a way to fix it.",translation:"我会想办法把它修好。"},
+      {word:"grab",ipa:"/ɡræb/",part:"动词 verb",meaning:"拿；快速得到（口语）",scene:"日常邀约",example:"Do you want to grab a coffee after work?",translation:"下班后要不要一起喝杯咖啡？"},
+      {word:"awkward",ipa:"/ˈɑː.kwɚd/",part:"形容词 adjective",meaning:"尴尬的；不自然的",scene:"描述社交感受",example:"There was an awkward silence after that question.",translation:"那个问题之后出现了一阵尴尬的沉默。"},
+      {word:"no worries",ipa:"/noʊ ˈwɝː.iz/",part:"短语 phrase",meaning:"没关系；不用担心",scene:"回应道歉或感谢",example:"No worries, take your time.",translation:"没关系，你慢慢来。"},
+      {word:"recommend",ipa:"/ˌrek.əˈmend/",part:"动词 verb",meaning:"推荐；建议",scene:"分享选择",example:"What restaurant would you recommend around here?",translation:"你推荐这附近哪家餐厅？"},
+      {word:"hang out",ipa:"/hæŋ aʊt/",part:"短语 phrasal verb",meaning:"闲逛；一起消磨时间",scene:"朋友邀约",example:"We usually hang out at that small café.",translation:"我们通常在那家小咖啡馆一起消磨时间。"}
+    ];
+    const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),pagination=document.querySelector("#pagination");
+    const pageSize=3;let currentPage=1;
+    function escapeHTML(value){return String(value).replace(/[&<>'"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[char]))}
+    function visibleWords(){const q=search.value.trim().toLowerCase();return words.filter(item=>[item.word,item.meaning,item.scene,item.example].join(" ").toLowerCase().includes(q))}
+    function render(){const visible=visibleWords(),totalPages=Math.max(1,Math.ceil(visible.length/pageSize));currentPage=Math.min(currentPage,totalPages);const pageWords=visible.slice((currentPage-1)*pageSize,currentPage*pageSize);count.textContent=visible.length;grid.innerHTML=pageWords.length?pageWords.map(item=>`<article class="word-card"><div class="card-top"><div><h2 class="word">${escapeHTML(item.word)}</h2><p class="ipa">${escapeHTML(item.ipa)}</p></div><button class="speak-button" type="button" data-speak="${escapeHTML(item.word)}" aria-label="播放发音">🔊</button></div><div class="tags"><span class="tag">${escapeHTML(item.part)}</span><span class="tag">${escapeHTML(item.scene)}</span></div><p class="meaning">${escapeHTML(item.meaning)}</p><div class="example"><p class="example-label">场景例句</p><p>${escapeHTML(item.example)}</p><p class="translation">${escapeHTML(item.translation)}</p></div><div class="card-footer">开口读 3 遍，再尝试替换关键词</div></article>`).join(""):"<div class=\"empty\">没有找到匹配的单词。试试其他关键词吧。</div>";pagination.innerHTML=visible.length>pageSize?`<button class="page-button" type="button" data-page="prev" ${currentPage===1?"disabled":""}>上一页</button>${Array.from({length:totalPages},(_,i)=>`<button class="page-button ${i+1===currentPage?"active":""}" type="button" data-page="${i+1}">${i+1}</button>`).join("")}<button class="page-button" type="button" data-page="next" ${currentPage===totalPages?"disabled":""}>下一页</button><span class="page-label">第 ${currentPage} / ${totalPages} 页</span>`:""}
+    search.addEventListener("input",()=>{currentPage=1;render()});pagination.addEventListener("click",event=>{const button=event.target.closest("[data-page]");if(!button)return;const totalPages=Math.max(1,Math.ceil(visibleWords().length/pageSize));currentPage=button.dataset.page==="prev"?currentPage-1:button.dataset.page==="next"?currentPage+1:Number(button.dataset.page);currentPage=Math.max(1,Math.min(currentPage,totalPages));render()});grid.addEventListener("click",event=>{const button=event.target.closest("[data-speak]");if(button&&"speechSynthesis"in window){window.speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(button.dataset.speak);utterance.lang="en-US";utterance.rate=.82;window.speechSynthesis.speak(utterance)}});render();
+  </script>
+</body>
+</html>
