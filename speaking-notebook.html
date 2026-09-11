@@ -63,7 +63,13 @@
       {type:"word",word:"podcasts",ipa:"/ˈpɑːdkæsts/",part:"名词 noun",meaning:"播客；播客节目（podcast 的复数形式）",scene:"媒体与日常收听",example:"I listen to podcasts on my drive home from work.",translation:"我在下班开车回家的路上听播客。"},
       {type:"word",word:"recommendation",ipa:"/ˌrekəmenˈdeɪʃən/",part:"名词 noun",meaning:"推荐；推荐的事物；建议",scene:"分享喜好与建议",example:"Thanks for the recommendation—I really enjoyed the podcast.",translation:"谢谢你的推荐，我真的很喜欢这个播客。"},
       {type:"phrase",word:"stay late",ipa:"/steɪ leɪt/",part:"短语 verb phrase",meaning:"待到很晚；晚走；加班到很晚",scene:"工作与作息安排",example:"I had to stay late at work to finish the report.",translation:"我不得不在公司加班到很晚来完成报告。"},
-      {type:"phrase",word:"on my drive home from",ipa:"/ɑːn maɪ draɪv hoʊm frəm/",part:"短语 prepositional phrase",meaning:"在我从……开车回家的路上（from 后接地点、工作或活动）",scene:"通勤与日常收听",example:"I listen to podcasts on my drive home from work.",translation:"我在下班开车回家的路上听播客。"}
+      {type:"phrase",word:"on my drive home from",ipa:"/ɑːn maɪ draɪv hoʊm frəm/",part:"短语 prepositional phrase",meaning:"在我从……开车回家的路上（from 后接地点、工作或活动）",scene:"通勤与日常收听",example:"I listen to podcasts on my drive home from work.",translation:"我在下班开车回家的路上听播客。"},
+      {type:"word",word:"elderly",ipa:"/ˈeldərli/",part:"形容词 adjective",meaning:"年长的；老年人的（较礼貌、正式，常用于描述人）",scene:"描述年龄与照护",example:"The community center offers activities for elderly people.",translation:"社区中心为老年人提供各种活动。"},
+      {type:"word",word:"transcript",ipa:"/ˈtrænskrɪpt/",part:"名词 noun",meaning:"文字记录；（访谈、演讲等的）逐字稿；成绩单",scene:"学习与信息记录",example:"I read the transcript of the interview after listening to the podcast.",translation:"听完播客后，我读了那次访谈的文字记录。"},
+      {type:"phrase",word:"underground parking lot",ipa:"/ˌʌndərɡraʊnd ˈpɑːrkɪŋ lɑːt/",part:"短语 noun phrase",meaning:"地下停车场",scene:"问路与停车",example:"The underground parking lot is beneath the shopping center.",translation:"地下停车场在购物中心下面。"},
+      {type:"phrase",word:"by the time",ipa:"/baɪ ðə taɪm/",part:"短语 conjunction",meaning:"到……时候；等到……时（引出一个时间点或时间从句）",scene:"表达时间先后",example:"By the time we arrived, the movie had already started.",translation:"我们到达时，电影已经开始了。"},
+      {type:"phrase",word:"go through",ipa:"/ɡoʊ θruː/",part:"短语 phrasal verb",meaning:"经历；仔细检查；浏览；通过（根据语境有不同含义）",scene:"描述经历与处理信息",example:"She went through the transcript carefully before sharing it.",translation:"她仔细检查了文字记录后才分享出去。"},
+      {type:"phrase",word:"make a turn",ipa:"/meɪk ə tɝːn/",part:"短语 verb phrase",meaning:"转弯；转向（常与 left、right 或 U-turn 连用）",scene:"驾驶与问路",example:"Make a right turn at the next intersection.",translation:"在下一个路口右转。"}
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -104,7 +110,13 @@
       "podcasts":["listen to podcasts（听播客）","a podcast episode（一期播客节目）","host a podcast（主持播客节目）"],
       "recommendation":["make a recommendation（提出建议）","a recommendation for something（对某事物的推荐）","on someone’s recommendation（经某人推荐）"],
       "stay late":["stay late at work：在公司待到很晚","work late：工作到很晚","stay up late：熬夜，强调很晚还没睡"],
-      "on my drive home from":["on my way home from：在我从……回家的路上，不限交通方式","during my drive home from：在我从……开车回家的途中","while driving home from：从……开车回家时，后接完整动作"]
+      "on my drive home from":["on my way home from：在我从……回家的路上，不限交通方式","during my drive home from：在我从……开车回家的途中","while driving home from：从……开车回家时，后接完整动作"],
+      "elderly":["elderly people：老年人，较礼貌的说法","an elderly person：一位老年人","elderly care：老年照护"],
+      "transcript":["a transcript of + 内容：……的文字记录","an academic transcript：成绩单","get / read / review a transcript：获取／阅读／查看文字记录"],
+      "underground parking lot":["an underground car park：地下停车场，英式英语常用","a parking garage：停车楼／停车库，美式英语常用","park in the lot：把车停在停车场里"],
+      "by the time":["by the time + 过去时，主句常用过去完成时：到……时已经……","by the time + 一般现在时，主句可用 will have + 过去分词：到……时将已经……","by then：到那时，后面不直接接从句"],
+      "go through":["go through something：经历或仔细检查某事","go through with something：把某事坚持做完","go over something：复习或检查某事，语气更偏向查看细节"],
+      "make a turn":["make a left/right turn：左转／右转","take a turn：转弯；轮流做某事，含义取决于语境","make a U-turn：掉头"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
