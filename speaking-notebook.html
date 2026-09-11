@@ -12,8 +12,8 @@
     .toolbar{display:flex;gap:12px;align-items:center;margin-bottom:22px;scroll-margin-top:16px}.search-box{position:relative;flex:1}.search-box span{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted)}.search-box input{width:100%;border:1px solid var(--line);border-radius:12px;padding:13px 14px 13px 40px;background:var(--surface);outline:0}.search-box input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(83,109,251,.12)}.stats{display:flex;gap:8px;color:var(--muted);white-space:nowrap;font-size:.9rem}.stats strong{color:var(--ink)}
     .category-tabs{display:flex;gap:8px;margin-bottom:16px;padding:5px;border:1px solid var(--line);border-radius:14px;background:var(--surface);width:max-content}.category-tab{border:0;border-radius:10px;padding:9px 15px;color:var(--muted);background:transparent;font-weight:700}.category-tab:hover{color:var(--ink)}.category-tab.active{color:#3f56dd;background:var(--primary-soft)}
     .word-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:18px}.word-card{display:flex;flex-direction:column;min-height:320px;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--surface);box-shadow:var(--shadow)}.card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.word{margin-bottom:2px;font-size:1.75rem;letter-spacing:-.03em}.ipa{display:flex;align-items:baseline;gap:6px;margin-bottom:0;color:var(--muted);font-family:"Noto Sans", "Segoe UI", sans-serif;font-size:.98rem;letter-spacing:.02em}.ipa-label{color:#98a1b3;font-family:inherit;font-size:.68rem;font-weight:750;letter-spacing:.08em}.speak-button{display:inline-grid;place-items:center;width:40px;height:40px;border:0;border-radius:50%;color:#3f56dd;background:var(--primary-soft);font-size:1.08rem}.speak-button:hover{background:#e0e4ff}.tags{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 13px}.tag{padding:4px 9px;border-radius:999px;color:#3f56dd;background:var(--primary-soft);font-size:.78rem;font-weight:700}.meaning{margin-bottom:15px;font-size:1rem}.language-notes{margin-bottom:17px;padding-top:13px;border-top:1px solid var(--line)}.language-notes ul{margin:0;padding-left:19px}.language-notes li{margin:4px 0;color:#3e485c;font-size:.9rem}.language-notes li::marker{color:var(--primary)}.section-label{margin-bottom:5px;color:var(--muted);font-size:.75rem;font-weight:750;letter-spacing:.05em}.example{margin-top:auto;padding:14px;border-left:3px solid var(--primary);border-radius:0 10px 10px 0;background:#fafbff}.example-label{margin-bottom:5px;color:var(--muted);font-size:.75rem;font-weight:750;letter-spacing:.05em;text-transform:uppercase}.example p{margin-bottom:5px;font-size:.98rem;white-space:pre-line}.translation{margin-bottom:0!important;color:var(--muted);font-size:.88rem!important}.empty{grid-column:1/-1;padding:50px 20px;border:1px dashed var(--line);border-radius:18px;color:var(--muted);text-align:center}
-    .pagination{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:26px}.page-button{min-width:38px;height:38px;padding:0 11px;border:1px solid var(--line);border-radius:10px;color:var(--ink);background:var(--surface);font-weight:700}.page-button:hover:not(:disabled),.page-button.active{border-color:var(--primary);color:#fff;background:var(--primary)}.page-button:disabled{cursor:not-allowed;opacity:.42}.page-label{margin:0 6px;color:var(--muted);font-size:.9rem}
-    @media(max-width:620px){.app-shell{width:min(100% - 22px,1120px);padding-top:20px}header{margin-bottom:20px}.category-tabs{width:100%}.category-tab{flex:1;padding:9px 8px}.toolbar{display:block}.stats{margin-top:10px}.word-card{min-height:0}.pagination{margin-top:20px}.page-label{display:none}}
+    .pagination{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:26px}.page-button{flex:0 0 auto;min-width:38px;height:38px;padding:0 11px;border:1px solid var(--line);border-radius:10px;color:var(--ink);background:var(--surface);font-weight:700;line-height:1;white-space:nowrap}.page-button:hover:not(:disabled),.page-button.active{border-color:var(--primary);color:#fff;background:var(--primary)}.page-button:disabled{cursor:not-allowed;opacity:.42}.page-label{margin:0 6px;color:var(--muted);font-size:.9rem}
+    @media(max-width:620px){.app-shell{width:min(100% - 22px,1120px);padding-top:20px}header{margin-bottom:20px}.category-tabs{width:100%}.category-tab{flex:1;padding:9px 8px}.toolbar{display:block}.stats{margin-top:10px}.word-card{min-height:0}.pagination{flex-wrap:wrap;row-gap:8px;margin-top:20px}.page-label{display:none}}
   </style>
 </head>
 <body>
@@ -60,16 +60,34 @@
       {type:"word",word:"elevated",ipa:"/ˈeləveɪtɪd/",part:"形容词 adjective",meaning:"升高的；高架的；提高的；（血压、温度、数值等）偏高的；（情绪、语气等）高昂的；高尚的；提升到更高层次的",scene:"描述高度、数值或状态",example:"The doctor said my blood pressure was slightly elevated, so I should get more rest.",translation:"医生说我的血压有些偏高，所以我应该多休息。"},
       {type:"phrase",word:"these past few days",ipa:"/ðiːz pæst fjuː deɪz/",part:"短语 time expression",meaning:"这过去几天；最近这几天（通常指从过去延续到现在的一小段时间）",scene:"谈论最近的情况",example:"I’ve been feeling a little tired these past few days.",translation:"这几天我一直觉得有点累。"},
       {type:"phrase",word:"morning rush",ipa:"/ˈmɔːrnɪŋ rʌʃ/",part:"短语 noun phrase",meaning:"早高峰；早晨的交通拥堵时段；早晨出门前后的忙乱时段",scene:"通勤与日常安排",example:"I leave home early to avoid the morning rush.",translation:"我早点出门，以避开早高峰。"},
-      {type:"word",word:"podcasts",ipa:"/ˈpɑːdkæsts/",part:"名词 noun",meaning:"播客；播客节目（podcast 的复数形式）",scene:"媒体与日常收听",example:"I listen to podcasts on my drive home from work.",translation:"我在下班开车回家的路上听播客。"},
+      {type:"word",word:"podcast",ipa:"/ˈpɑːdkæst/",part:"名词 noun",meaning:"播客；播客节目（通过互联网发布、可在线收听或下载的音频节目）",scene:"媒体与日常收听",example:"I listen to a podcast on my drive home from work.",translation:"我在下班开车回家的路上听播客。"},
       {type:"word",word:"recommendation",ipa:"/ˌrekəmenˈdeɪʃən/",part:"名词 noun",meaning:"推荐；推荐的事物；建议",scene:"分享喜好与建议",example:"Thanks for the recommendation—I really enjoyed the podcast.",translation:"谢谢你的推荐，我真的很喜欢这个播客。"},
       {type:"phrase",word:"stay late",ipa:"/steɪ leɪt/",part:"短语 verb phrase",meaning:"待到很晚；晚走；加班到很晚",scene:"工作与作息安排",example:"I had to stay late at work to finish the report.",translation:"我不得不在公司加班到很晚来完成报告。"},
       {type:"phrase",word:"on my drive home from",ipa:"/ɑːn maɪ draɪv hoʊm frəm/",part:"短语 prepositional phrase",meaning:"在我从……开车回家的路上（from 后接地点、工作或活动）",scene:"通勤与日常收听",example:"I listen to podcasts on my drive home from work.",translation:"我在下班开车回家的路上听播客。"},
-      {type:"word",word:"elderly",ipa:"/ˈeldərli/",part:"形容词 adjective",meaning:"年长的；老年人的（较礼貌、正式，常用于描述人）",scene:"描述年龄与照护",example:"The community center offers activities for elderly people.",translation:"社区中心为老年人提供各种活动。"},
+      {type:"phrase",word:"on my drive home from",ipa:"/ɑːn maɪ draɪv hoʊm frəm/",part:"短语 prepositional phrase",meaning:"在我从……开车回家的路上（from 后接地点、工作或活动）",scene:"通勤与日常收听",example:"I listen to a podcast on my drive home from work.",translation:"我在下班开车回家的路上听播客。"},
+      {type:"word",word:"vocabulary",ipa:"/vəˈkæbjəleri/",part:"名词 noun",meaning:"词汇；词汇量；某一领域或某个人使用的全部词语",scene:"语言学习",example:"Reading regularly is a great way to build your vocabulary.",translation:"坚持阅读是扩大词汇量的好方法。"},
+      {type:"word",word:"phrase",ipa:"/freɪz/",part:"名词 noun",meaning:"短语；词组；成语；说法；（音乐或语言中的）短句；措辞；表达方式",scene:"语言表达与语法",example:"“Take your time” is a useful phrase when you want someone to relax.",translation:"当你想让别人放轻松时，“Take your time” 是一个很实用的说法。"},
+      {type:"phrase",word:"keep track of",ipa:"/kiːp træk əv/",part:"短语 phrasal verb",meaning:"记录；掌握……的动态；持续了解；留意并跟踪",scene:"记录与管理信息",example:"I use an app to keep track of my new vocabulary.",translation:"我用一个应用来记录新学的词汇。"},
+      {type:"phrase",word:"set up",ipa:"/set ʌp/",part:"短语 phrasal verb",meaning:"建立；设立；安装；设置；安排；准备好；陷害（具体含义取决于语境）",scene:"准备、安装与安排",example:"I need a few minutes to set up the equipment before the class starts.",translation:"上课前我需要几分钟把设备安装好。"},
+      {type:"phrase",word:"build up",ipa:"/bɪld ʌp/",part:"短语 phrasal verb",meaning:"逐步建立；积累；增强；增加；使逐渐形成；（压力、灰尘等）积聚",scene:"积累与逐步发展",example:"Small daily habits can build up your confidence over time.",translation:"每天的小习惯会逐渐增强你的自信。"},
+      {type:"phrase",word:"replace...with...",ipa:"/rɪˈpleɪs ... wɪð .../",part:"短语 verb pattern",meaning:"用……替换……；把……换成……（replace A with B，A 是被替换的对象，B 是替换后的对象）",scene:"替换物品或做法",example:"Try to replace sugary drinks with water.",translation:"试着用水代替含糖饮料。"},
+      {type:"phrase",word:"over time",ipa:"/ˈoʊvɚ taɪm/",part:"短语 adverbial phrase",meaning:"随着时间的推移；久而久之；经过一段时间",scene:"描述长期变化",example:"Your listening skills will improve over time if you practice regularly.",translation:"如果坚持练习，随着时间推移，你的听力会提高。"},
+      {type:"phrase",word:"starting today",ipa:"/ˈstɑːrtɪŋ təˈdeɪ/",part:"短语 adverbial phrase",meaning:"从今天开始；今天起（表示从现在起采取新的行动或安排）",scene:"制定计划与做出改变",example:"Starting today, I’m going to review ten new words every morning.",translation:"从今天开始，我每天早上要复习十个新单词。"},
+      {type:"word",word:"relatively",ipa:"/ˈrelətɪvli/",part:"副词 adverb",meaning:"相对地；比较而言；相当地（表示与其他人或事物相比）",scene:"进行比较或描述程度",example:"The test was relatively easy compared with the last one.",translation:"与上次相比，这次考试比较容易。"},
+      {type:"word",word:"carefree",ipa:"/ˈkerfriː/",part:"形容词 adjective",meaning:"无忧无虑的；无牵无挂的；轻松自在的",scene:"描述心情与生活状态",example:"I miss the carefree summer days of my childhood.",translation:"我怀念童年时无忧无虑的夏日。"},
+      {type:"word",word:"ambition",ipa:"/æmˈbɪʃən/",part:"名词 noun",meaning:"抱负；雄心；志向；渴望达到的目标；追求成功的决心",scene:"谈论理想与人生目标",example:"Her ambition is to become a doctor and help people in need.",translation:"她的志向是成为一名医生，帮助有需要的人。"},
+      {type:"phrase",word:"go back",ipa:"/ɡoʊ bæk/",part:"短语 phrasal verb",meaning:"回去；返回；追溯到；恢复到先前的状态；回想过去",scene:"返回某处或回顾过去",example:"I’d love to go back to my hometown someday.",translation:"我希望有一天能回到家乡。"},
+      {type:"phrase",word:"all over",ipa:"/ɔːl ˈoʊvɚ/",part:"短语 phrase",meaning:"到处；遍及；浑身；全部结束；彻底地（具体含义取决于语境）",scene:"描述范围或事情结束",example:"We looked all over the house, but we still couldn’t find the keys.",translation:"我们找遍了整栋房子，却仍然没有找到钥匙。"},
+      {type:"phrase",word:"it's that time of year again",ipa:"/ɪts ðæt taɪm əv jɪr əˈɡen/",part:"短语 expression",meaning:"一年中的这个时候又到了；又到了每年做某事或发生某事的时候",scene:"谈论季节性活动",example:"It’s that time of year again—we need to start planning for the holidays.",translation:"一年中的这个时候又到了——我们得开始筹划假期了。"},
+      {type:"phrase",word:"become a better version of myself",ipa:"/bɪˈkʌm ə ˈbetɚ ˈvɝːʒən əv maɪˈself/",part:"短语 verb phrase",meaning:"成为更好的自己；让自己成长为更优秀的样子",scene:"自我成长与目标",example:"I’m learning from my mistakes to become a better version of myself.",translation:"我正从错误中学习，努力成为更好的自己。"},
+      {type:"phrase",word:"back then",ipa:"/bæk ðen/",part:"短语 time expression",meaning:"那时候；当时；在过去的那个时期",scene:"回忆过去",example:"Back then, we didn’t have smartphones or social media.",translation:"那时候，我们还没有智能手机和社交媒体。"},
+      {type:"phrase",word:"play against",ipa:"/pleɪ əˈɡenst/",part:"短语 verb phrase",meaning:"与……比赛；对阵；同……竞技",scene:"体育比赛与竞争",example:"Our team will play against the champions next week.",translation:"我们队下周将对阵冠军队。"},
       {type:"word",word:"transcript",ipa:"/ˈtrænskrɪpt/",part:"名词 noun",meaning:"文字记录；（访谈、演讲等的）逐字稿；成绩单",scene:"学习与信息记录",example:"I read the transcript of the interview after listening to the podcast.",translation:"听完播客后，我读了那次访谈的文字记录。"},
       {type:"phrase",word:"underground parking lot",ipa:"/ˌʌndərɡraʊnd ˈpɑːrkɪŋ lɑːt/",part:"短语 noun phrase",meaning:"地下停车场",scene:"问路与停车",example:"The underground parking lot is beneath the shopping center.",translation:"地下停车场在购物中心下面。"},
       {type:"phrase",word:"by the time",ipa:"/baɪ ðə taɪm/",part:"短语 conjunction",meaning:"到……时候；等到……时（引出一个时间点或时间从句）",scene:"表达时间先后",example:"By the time we arrived, the movie had already started.",translation:"我们到达时，电影已经开始了。"},
       {type:"phrase",word:"go through",ipa:"/ɡoʊ θruː/",part:"短语 phrasal verb",meaning:"经历；仔细检查；浏览；通过（根据语境有不同含义）",scene:"描述经历与处理信息",example:"She went through the transcript carefully before sharing it.",translation:"她仔细检查了文字记录后才分享出去。"},
-      {type:"phrase",word:"make a turn",ipa:"/meɪk ə tɝːn/",part:"短语 verb phrase",meaning:"转弯；转向（常与 left、right 或 U-turn 连用）",scene:"驾驶与问路",example:"Make a right turn at the next intersection.",translation:"在下一个路口右转。"}
+      {type:"phrase",word:"make a turn",ipa:"/meɪk ə tɝːn/",part:"短语 verb phrase",meaning:"转弯；转向（常与 left、right 或 U-turn 连用）",scene:"驾驶与问路",example:"Make a right turn at the next intersection.",translation:"在下一个路口右转。"},
+      {type:"word",word:"elderly",ipa:"/ˈeldərli/",part:"形容词 adjective",meaning:"年长的；老年人的（较礼貌、正式，常用于描述人）",scene:"描述年龄与照护",example:"The community center offers activities for elderly people.",translation:"社区中心为老年人提供各种活动。"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -107,7 +125,7 @@
       "elevated":["elevated blood pressure（血压偏高）","an elevated temperature（体温偏高）","an elevated risk（升高的风险）"],
       "these past few days":["over the past few days：在过去几天里","for the past few days：持续了过去几天","lately / recently：最近"],
       "morning rush":["morning rush hour：早高峰时段","evening rush：晚高峰","during rush hour：在交通高峰期"],
-      "podcasts":["listen to podcasts（听播客）","a podcast episode（一期播客节目）","host a podcast（主持播客节目）"],
+      "podcast":["listen to a podcast（听播客）","a podcast episode（一期播客节目）","host a podcast（主持播客节目）"],
       "recommendation":["make a recommendation（提出建议）","a recommendation for something（对某事物的推荐）","on someone’s recommendation（经某人推荐）"],
       "stay late":["stay late at work：在公司待到很晚","work late：工作到很晚","stay up late：熬夜，强调很晚还没睡"],
       "on my drive home from":["on my way home from：在我从……回家的路上，不限交通方式","during my drive home from：在我从……开车回家的途中","while driving home from：从……开车回家时，后接完整动作"],
@@ -116,7 +134,24 @@
       "underground parking lot":["an underground car park：地下停车场，英式英语常用","a parking garage：停车楼／停车库，美式英语常用","park in the lot：把车停在停车场里"],
       "by the time":["by the time + 过去时，主句常用过去完成时：到……时已经……","by the time + 一般现在时，主句可用 will have + 过去分词：到……时将已经……","by then：到那时，后面不直接接从句"],
       "go through":["go through something：经历或仔细检查某事","go through with something：把某事坚持做完","go over something：复习或检查某事，语气更偏向查看细节"],
-      "make a turn":["make a left/right turn：左转／右转","take a turn：转弯；轮流做某事，含义取决于语境","make a U-turn：掉头"]
+      "make a turn":["make a left/right turn：左转／右转","take a turn：转弯；轮流做某事，含义取决于语境","make a U-turn：掉头"],
+      "vocabulary":["build your vocabulary（扩大词汇量）","a wide vocabulary（词汇量丰富）","technical vocabulary（专业词汇）"],
+      "phrase":["a useful phrase（实用的短语）","a common phrase（常见说法）","phrase something carefully（谨慎措辞）"],
+      "keep track of":["keep track of expenses（记录开支）","keep track of progress（跟踪进度）","lose track of time（忘记时间）"],
+      "set up":["set up an account（开设账户）","set up a meeting（安排会议）","set something up（安装或设置某物）"],
+      "build up":["build up confidence（建立自信）","build up experience（积累经验）","build up to something（逐步发展到某事）"],
+      "replace...with...":["replace A with B（用 B 替换 A）","replace sugar with honey（用蜂蜜代替糖）","replace an old habit with a new one（用新习惯替代旧习惯）"],
+      "over time":["change over time（随着时间改变）","improve over time（逐渐改善）","over a period of time（经过一段时间）"],
+      "starting today":["starting today, ...（从今天开始……）","starting tomorrow（从明天开始）","effective today（从今天起生效，较正式）"],
+      "relatively":["relatively easy（相对容易）","relatively small（相对较小）","relatively speaking（相对而言）"],
+      "carefree":["a carefree life（无忧无虑的生活）","carefree days（无忧无虑的日子）","feel carefree（感到轻松自在）"],
+      "ambition":["have an ambition to do（有做某事的志向）","achieve your ambition（实现抱负）","a lifelong ambition（毕生的愿望）"],
+      "go back":["go back to + 地点：回到某地","go back to + 时间：追溯到某时","go back to doing：恢复做某事"],
+      "all over":["all over the world：全世界","all over again：重新、再一次","be all over：全部结束"],
+      "it's that time of year again":["It’s time for ...：到了……的时候","It’s that time again：那个时候又到了","This time of year：每年的这个时候"],
+      "become a better version of myself":["work on myself：提升自己","improve myself：完善自己","be the best version of myself：成为最好的自己"],
+      "back then":["at that time：在那时","in those days：在那些日子里","years ago：多年前"],
+      "play against":["play against a team：与一支队伍比赛","compete against：与……竞争","play for a team：代表一支队伍参赛"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
