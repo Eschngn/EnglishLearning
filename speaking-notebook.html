@@ -98,6 +98,14 @@
       {type:"phrase",word:"go through",ipa:"/ɡoʊ θruː/",part:"短语 phrasal verb",meaning:"经历；仔细检查；浏览；通过（根据语境有不同含义）",scene:"描述经历与处理信息",example:"She went through the transcript carefully before sharing it.",translation:"她仔细检查了文字记录后才分享出去。"},
       {type:"phrase",word:"make a turn",ipa:"/meɪk ə tɝːn/",part:"短语 verb phrase",meaning:"转弯；转向（常与 left、right 或 U-turn 连用）",scene:"驾驶与问路",example:"Make a right turn at the next intersection.",translation:"在下一个路口右转。"},
       {type:"word",word:"elderly",ipa:"/ˈeldərli/",part:"形容词 adjective",meaning:"年长的；老年人的（较礼貌、正式，常用于描述人）",scene:"描述年龄与照护",example:"The community center offers activities for elderly people.",translation:"社区中心为老年人提供各种活动。"},
+      {type:"word",word:"function",ipa:"/ˈfʌŋkʃən/",part:"名词 / 动词 noun / verb",meaning:"n. 功能；作用；用途；（数学）函数；正式活动或典礼；v. 运转；正常工作；起作用；担任（某种角色）；发挥功能",scene:"名词：描述功能、用途或活动；动词：描述运转、作用或角色",example:"n. The main function of this button is to start the camera.\nv. My old laptop still functions well for basic tasks.",translation:"n. 这个按钮的主要功能是启动相机。\nv. 我的旧笔记本电脑处理基本任务时仍然运行良好。"},
+      {type:"word",word:"photography",ipa:"/fəˈtɑːɡrəfi/",part:"名词 noun",meaning:"摄影；摄影艺术；摄影作品（泛指用相机记录和创作图像的活动或领域）",scene:"谈论摄影兴趣、技巧与作品",example:"Photography helps me notice small details in everyday life.",translation:"摄影让我注意到日常生活中的细节。"},
+      {type:"word",word:"battery",ipa:"/ˈbætəri/",part:"名词 noun",meaning:"电池；蓄电池；（设备的）电池电量；一组、一套（尤指成排的设备）",scene:"描述电子设备供电与电量",example:"My phone battery is almost dead, so I need to charge it.",translation:"我的手机电量快没了，所以需要充电。"},
+      {type:"word",word:"charge",ipa:"/tʃɑːrdʒ/",part:"动词 / 名词 verb / noun",meaning:"v. 给……充电；收费；要价；控告；指责；猛冲；n. 费用；掌管；负责；指控；电荷；充电（过程）",scene:"谈论充电、费用或责任",example:"v. I forgot to charge my camera last night.\nn. There is no extra charge for delivery.",translation:"v. 我昨晚忘记给相机充电了。\nn. 配送不额外收费。"},
+      {type:"phrase",word:"forgot about",ipa:"/fərˈɡɑːt əˈbaʊt/",part:"短语 phrasal verb",meaning:"忘记了……；不再想起……；不再考虑……（forget about 的过去式）",scene:"说明忘记某事或某人",example:"I completely forgot about the meeting this morning.",translation:"我今天早上完全忘了还有会议。"},
+      {type:"phrase",word:"get oneself",ipa:"/ɡet wʌnˈself/",part:"短语 verb phrase",meaning:"让自己处于某种状态；给自己弄到或准备好某物；使自己做某事（oneself 随主语变化）",scene:"描述自我安排与主动行动",example:"I’m going to get myself a Fujifilm camera for my birthday.",translation:"我打算给自己买一台富士相机作为生日礼物。"},
+      {type:"phrase",word:"organize...on",ipa:"/ˈɔːrɡənaɪz ... ɑːn/",part:"短语 verb pattern",meaning:"在某个设备、平台或位置上整理……（organize A on B）；也可表示组织关于某主题的活动",scene:"整理照片、文件或安排主题活动",example:"I organize my photos on my laptop after every trip.",translation:"每次旅行后，我都会在笔记本电脑上整理照片。"},
+      {type:"phrase",word:"Fujifilm camera",ipa:"/ˈfuːdʒɪfɪlm ˈkæmərə/",part:"短语 noun phrase",meaning:"富士相机；富士胶片公司的相机产品",scene:"摄影器材与购物",example:"She uses a Fujifilm camera for street photography.",translation:"她用富士相机进行街头摄影。"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -161,7 +169,15 @@
       "it's that time of year again":["It’s time for ...：到了……的时候","It’s that time again：那个时候又到了","This time of year：每年的这个时候"],
       "become a better version of myself":["work on myself：提升自己","improve myself：完善自己","be the best version of myself：成为最好的自己"],
       "back then":["at that time：在那时","in those days：在那些日子里","years ago：多年前"],
-      "play against":["play against a team：与一支队伍比赛","compete against：与……竞争","play for a team：代表一支队伍参赛"]
+      "play against":["play against a team：与一支队伍比赛","compete against：与……竞争","play for a team：代表一支队伍参赛"],
+      "function":["the function of something（某物的功能／作用）","function properly（正常运转）","function as + 名词（起……的作用）"],
+      "photography":["street photography（街头摄影）","portrait photography（人像摄影）","landscape photography（风光摄影）"],
+      "battery":["battery life（电池续航）","a low battery（电量低）","replace the battery（更换电池）"],
+      "charge":["charge the battery（给电池充电）","charge a fee（收取费用）","be in charge of（负责）"],
+      "forgot about":["forget about something（忘记某事／不再考虑某事）","completely forgot about（完全忘了）","don’t forget about ...（别忘了……）"],
+      "get oneself":["get oneself a drink（给自己弄杯饮料）","get oneself ready（让自己准备好）","get oneself into trouble（使自己陷入麻烦）"],
+      "organize...on":["organize photos on a computer（在电脑上整理照片）","organize files on a drive（整理硬盘上的文件）","organize a workshop on ...（组织关于……的工作坊）"],
+      "Fujifilm camera":["use a Fujifilm camera（使用富士相机）","a Fujifilm camera body（富士相机机身）","a Fujifilm lens（富士镜头）"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
