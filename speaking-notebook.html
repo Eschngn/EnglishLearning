@@ -110,6 +110,9 @@
       {type:"word",word:"spot",ipa:"/spɑːt/",part:"名词 / 动词 noun / verb",meaning:"n. 斑点；污渍；地点；场所；少量；（节目或广告的）时段；v. 看见；发现；认出；注意到；找出；在……上加斑点或污渍",scene:"名词：描述位置、痕迹或少量事物；动词：描述发现或认出",example:"n. We found a quiet spot near the river.\nv. I spotted a mistake in the report before sending it.",translation:"n. 我们在河边找到了一个安静的地方。\nv. 我发出报告前发现了其中一个错误。"},
       {type:"phrase",word:"keep...up",ipa:"/kiːp ... ʌp/",part:"短语 verb pattern",meaning:"保持……处于较高位置；继续做……；使……不下降；跟上……（keep A up，A 为被保持或跟上的对象）",scene:"保持状态、继续行动或跟上进度",example:"Keep up the good work—you’re making great progress.",translation:"继续保持好状态——你进步很大。"},
       {type:"phrase",word:"go back to",ipa:"/ɡoʊ bæk tuː/",part:"短语 phrasal verb",meaning:"回到……；返回……；追溯到……；重新开始做……",scene:"返回地点、回到话题或追溯时间",example:"Let’s go back to the main point of the discussion.",translation:"我们回到讨论的重点吧。"},
+      {type:"word",word:"reasonable",ipa:"/ˈriːzənəbəl/",part:"形容词 adjective",meaning:"合理的；合情理的；适度的；价格公道的；通情达理的",scene:"表达判断、要求或价格",example:"The seller offered a reasonable price for the used camera.",translation:"卖家为这台二手相机开出了合理的价格。"},
+      {type:"word",word:"register",ipa:"/ˈredʒɪstɚ/",part:"动词 / 名词 verb / noun",meaning:"v. 注册；登记；记录；（仪器）显示；n. 登记簿；注册；语体；（声音或语言的）语域",scene:"注册账户、登记信息或描述语言风格",example:"You need to register for an account before you can list an item.",translation:"你需要先注册账户，才能发布商品。"},
+      {type:"phrase",word:"second-hand marketplace",ipa:"/ˌsekənd ˈhænd ˈmɑːrkɪtpleɪs/",part:"短语 noun phrase",meaning:"二手交易市场；买卖二手物品的平台或市场",scene:"二手购物与物品交易",example:"I found this desk on a second-hand marketplace.",translation:"我在二手交易平台上找到了这张书桌。"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -185,6 +188,9 @@
       "spot":["spot a mistake（发现错误）","a tourist spot（旅游景点）","on the spot（当场；立刻）"],
       "keep...up":["keep up the good work（继续努力）","keep up with（跟上；了解动态）","keep it up（继续保持）"],
       "go back to":["go back to school（回到学校）","go back to basics（回归基础）","go back to + 时间（追溯到某个时间）"],
+      "reasonable":["a reasonable price（合理的价格）","a reasonable request（合理的请求）","be reasonable（讲道理；通情达理）"],
+      "register":["register for a course（注册课程）","register an account（注册账户）","register with + 机构（向某机构登记）"],
+      "second-hand marketplace":["buy something second-hand（买二手物品）","list an item（发布商品）","online marketplace（线上交易平台）"],
     };
     const wordForms = {
       "billiards":["billiards（名词：台球运动）","billiard（形容词：台球的）"],
@@ -218,7 +224,9 @@
       "photography":["photograph（名词：照片；动词：拍照）","photographer（名词：摄影师）","photographic（形容词：摄影的）"],
       "battery":["batter（动词：连续猛击；名词：面糊）","battery-powered（形容词：电池供电的）","batteries（名词复数：电池）"],
       "charge":["charger（名词：充电器）","chargeable（形容词：可充电的；应收费的）","charging（名词：充电）"],
-      "spot":["spotless（形容词：一尘不染的；无瑕疵的）","spotted（形容词：有斑点的；被发现的）","spotter（名词：观察员；发现者）"]
+      "spot":["spotless（形容词：一尘不染的；无瑕疵的）","spotted（形容词：有斑点的；被发现的）","spotter（名词：观察员；发现者）"],
+      "reasonable":["reason（名词／动词：理由；推理）","reasonably（副词：合理地；相当地）","reasonableness（名词：合理性）"],
+      "register":["registration（名词：注册；登记）","registrant（名词：注册人）","registered（形容词：已注册的；登记的）"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[];item.forms=wordForms[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
