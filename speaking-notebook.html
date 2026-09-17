@@ -113,6 +113,14 @@
       {type:"word",word:"reasonable",ipa:"/ˈriːzənəbəl/",part:"形容词 adjective",meaning:"合理的；合情理的；适度的；价格公道的；通情达理的",scene:"表达判断、要求或价格",example:"The seller offered a reasonable price for the used camera.",translation:"卖家为这台二手相机开出了合理的价格。"},
       {type:"word",word:"register",ipa:"/ˈredʒɪstɚ/",part:"动词 / 名词 verb / noun",meaning:"v. 注册；登记；记录；（仪器）显示；n. 登记簿；注册；语体；（声音或语言的）语域",scene:"注册账户、登记信息或描述语言风格",example:"You need to register for an account before you can list an item.",translation:"你需要先注册账户，才能发布商品。"},
       {type:"phrase",word:"second-hand marketplace",ipa:"/ˌsekənd ˈhænd ˈmɑːrkɪtpleɪs/",part:"短语 noun phrase",meaning:"二手交易市场；买卖二手物品的平台或市场",scene:"二手购物与物品交易",example:"I found this desk on a second-hand marketplace.",translation:"我在二手交易平台上找到了这张书桌。"},
+      {type:"word",word:"barely",ipa:"/ˈberli/",part:"副词 adverb",meaning:"几乎不；勉强；刚刚；仅仅",scene:"表达程度或勉强完成",example:"I could barely keep my eyes open after working overtime.",translation:"加班后，我几乎睁不开眼。"},
+      {type:"word",word:"exhausted",ipa:"/ɪɡˈzɔːstɪd/",part:"形容词 adjective",meaning:"筋疲力尽的；精疲力竭的；耗尽的",scene:"描述体力或精力耗尽",example:"I was completely exhausted after working overtime all week.",translation:"整个星期都在加班后，我已经筋疲力尽了。"},
+      {type:"word",word:"urgent",ipa:"/ˈɜːrdʒənt/",part:"形容词 adjective",meaning:"紧急的；急迫的；需要立即处理的",scene:"强调事情需要尽快处理",example:"This is urgent, so please reply as soon as you can.",translation:"这件事很紧急，请尽快回复。"},
+      {type:"word",word:"overtime",ipa:"/ˈoʊvɚtaɪm/",part:"名词 / 副词 / 形容词 noun / adverb / adjective",meaning:"加班；加班时间；在规定时间之外；加班的；超时的",scene:"描述额外工作时间",example:"I’ve been working overtime to finish the project.",translation:"我一直在加班，以完成这个项目。"},
+      {type:"phrase",word:"come up",ipa:"/kʌm ʌp/",part:"短语 phrasal verb",meaning:"出现；被提出；即将发生；（问题、机会等）出现",scene:"描述事情出现或临近",example:"If any questions come up, feel free to ask.",translation:"如果出现任何问题，尽管问。"},
+      {type:"phrase",word:"make up for",ipa:"/meɪk ʌp fɔːr/",part:"短语 phrasal verb",meaning:"弥补；补偿；抵消（损失、过失或错过的时间）",scene:"弥补损失、时间或过失",example:"I’ll work overtime to make up for the time I lost.",translation:"我会加班来弥补失去的时间。"},
+      {type:"phrase",word:"get ... off",ipa:"/ɡet ... ɔːf/",part:"短语 verb pattern",meaning:"获得某天休息；获准在某天不上班或不上学（日期可以替换）",scene:"安排休息日与工作日程",example:"I’m trying to get Saturday off so I can go on a trip.",translation:"我正争取周六休息，这样就能去旅行了。"},
+      {type:"phrase",word:"go on a trip",ipa:"/ɡoʊ ɑːn ə trɪp/",part:"短语 verb phrase",meaning:"去旅行；出门旅行",scene:"谈论旅行计划与经历",example:"We’re going on a trip next month.",translation:"我们下个月要去旅行。"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -191,6 +199,14 @@
       "reasonable":["a reasonable price（合理的价格）","a reasonable request（合理的请求）","be reasonable（讲道理；通情达理）"],
       "register":["register for a course（注册课程）","register an account（注册账户）","register with + 机构（向某机构登记）"],
       "second-hand marketplace":["buy something second-hand（买二手物品）","list an item（发布商品）","online marketplace（线上交易平台）"],
+      "barely":["barely enough（勉强够）","can barely hear / see（几乎听不见／看不见）","barely manage to do（勉强做到）"],
+      "exhausted":["feel exhausted（感到筋疲力尽）","physically and emotionally exhausted（身心俱疲）","be exhausted from + 名词／动名词（因……而筋疲力尽）"],
+      "urgent":["an urgent matter（紧急事项）","urgent action（紧急行动）","deal with something urgently（紧急处理某事）"],
+      "overtime":["work overtime（加班）","do overtime（加班，较口语）","overtime pay（加班费）"],
+      "come up":["something comes up（临时有事／某事出现）","come up with（想出；提出）","come up soon（很快到来）"],
+      "make up for":["make up for lost time（弥补失去的时间）","make up for a mistake（弥补错误）","make it up to someone（补偿某人）"],
+      "get ... off":["get Saturday off（争取周六休息）","get someday off（争取某天休息）","be off tomorrow（明天休息／不上班）"],
+      "go on a trip":["go on a business trip（出差）","go on a road trip（公路旅行）","take a trip（去旅行）"],
     };
     const wordForms = {
       "billiards":["billiards（名词：台球运动）","billiard（形容词：台球的）"],
@@ -226,7 +242,11 @@
       "charge":["charger（名词：充电器）","chargeable（形容词：可充电的；应收费的）","charging（名词：充电）"],
       "spot":["spotless（形容词：一尘不染的；无瑕疵的）","spotted（形容词：有斑点的；被发现的）","spotter（名词：观察员；发现者）"],
       "reasonable":["reason（名词／动词：理由；推理）","reasonably（副词：合理地；相当地）","reasonableness（名词：合理性）"],
-      "register":["registration（名词：注册；登记）","registrant（名词：注册人）","registered（形容词：已注册的；登记的）"]
+      "register":["registration（名词：注册；登记）","registrant（名词：注册人）","registered（形容词：已注册的；登记的）"],
+      "barely":["bare（形容词：赤裸的；无遮盖的）","bareness（名词：裸露；空无）"],
+      "exhausted":["exhaust（动词：使筋疲力尽；耗尽）","exhausting（形容词：令人筋疲力尽的）","exhaustion（名词：筋疲力尽；耗尽）"],
+      "urgent":["urgency（名词：紧迫性）","urgently（副词：紧急地）","urge（动词：敦促；力劝）"],
+      "overtime":["overwork（动词／名词：过度工作；过劳）","overtime（形容词：加班的；超时的）","overtired（形容词：过度疲劳的）"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[];item.forms=wordForms[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
