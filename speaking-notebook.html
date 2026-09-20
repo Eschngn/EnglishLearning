@@ -121,6 +121,11 @@
       {type:"phrase",word:"make up for",ipa:"/meɪk ʌp fɔːr/",part:"短语 phrasal verb",meaning:"弥补；补偿；抵消（损失、过失或错过的时间）",scene:"弥补损失、时间或过失",example:"I’ll work overtime to make up for the time I lost.",translation:"我会加班来弥补失去的时间。"},
       {type:"phrase",word:"get ... off",ipa:"/ɡet ... ɔːf/",part:"短语 verb pattern",meaning:"获得某天休息；获准在某天不上班或不上学（日期可以替换）",scene:"安排休息日与工作日程",example:"I’m trying to get Saturday off so I can go on a trip.",translation:"我正争取周六休息，这样就能去旅行了。"},
       {type:"phrase",word:"go on a trip",ipa:"/ɡoʊ ɑːn ə trɪp/",part:"短语 verb phrase",meaning:"去旅行；出门旅行",scene:"谈论旅行计划与经历",example:"We’re going on a trip next month.",translation:"我们下个月要去旅行。"},
+      {type:"word",word:"recharge",ipa:"/ˌriːˈtʃɑːrdʒ/",part:"动词 / 名词 verb / noun",meaning:"v. 重新充电；恢复精力；重新获得力量；n. 重新充电；休息调整",scene:"描述给设备充电或让自己恢复精力",example:"I need a quiet weekend to recharge after a busy week.",translation:"忙碌了一周后，我需要一个安静的周末来恢复精力。"},
+      {type:"phrase",word:"take a lot out of",ipa:"/teɪk ə lɑːt aʊt əv/",part:"短语 verb phrase",meaning:"使……非常疲惫；消耗……大量体力或精力",scene:"描述事情带来的疲劳",example:"Working overtime every day really takes a lot out of me.",translation:"每天加班真的让我精疲力竭。"},
+      {type:"phrase",word:"fall back asleep",ipa:"/fɔːl bæk əˈsliːp/",part:"短语 verb phrase",meaning:"再次入睡；醒来后重新睡着",scene:"描述夜间醒来后重新入睡",example:"I woke up at 3 a.m. but soon fell back asleep.",translation:"我凌晨三点醒了，但很快又睡着了。"},
+      {type:"phrase",word:"enough for",ipa:"/ɪˈnʌf fɔːr/",part:"短语 phrase",meaning:"对……来说足够；足以满足……的需要",scene:"判断数量、程度或能力是否足够",example:"This amount of food should be enough for everyone.",translation:"这些食物应该够大家吃。"},
+      {type:"phrase",word:"have much of an appetite for",ipa:"/hæv mʌtʃ əv ən ˈæpətaɪt fɔːr/",part:"短语 verb phrase",meaning:"对……没有太大胃口；不太想吃或不太有兴趣（常用于否定句或疑问句）",scene:"表达食欲或对某事物的兴趣程度",example:"I don’t have much of an appetite for anything heavy tonight.",translation:"今晚我不太想吃油腻或分量大的东西。"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -207,6 +212,10 @@
       "make up for":["make up for lost time（弥补失去的时间）","make up for a mistake（弥补错误）","make it up to someone（补偿某人）"],
       "get ... off":["get Saturday off（争取周六休息）","get someday off（争取某天休息）","be off tomorrow（明天休息／不上班）"],
       "go on a trip":["go on a business trip（出差）","go on a road trip（公路旅行）","take a trip（去旅行）"],
+      "take a lot out of":["take it out of someone（使某人疲惫）","a tiring experience（令人疲惫的经历）","wear someone out（使某人筋疲力尽）"],
+      "fall back asleep":["fall asleep（入睡）","go back to sleep（回去继续睡）","stay asleep（保持睡着）"],
+      "enough for":["be enough for someone（对某人来说足够）","enough for everyone（够大家用／吃）","more than enough for（绰绰有余）"],
+      "have much of an appetite for":["have an appetite for something（对某物有胃口／有兴趣）","not have much of an appetite（没什么胃口）","have no appetite for something（完全没胃口／没兴趣）"],
     };
     const wordForms = {
       "billiards":["billiards（名词：台球运动）","billiard（形容词：台球的）"],
@@ -246,7 +255,8 @@
       "barely":["bare（形容词：赤裸的；无遮盖的）","bareness（名词：裸露；空无）"],
       "exhausted":["exhaust（动词：使筋疲力尽；耗尽）","exhausting（形容词：令人筋疲力尽的）","exhaustion（名词：筋疲力尽；耗尽）"],
       "urgent":["urgency（名词：紧迫性）","urgently（副词：紧急地）","urge（动词：敦促；力劝）"],
-      "overtime":["overwork（动词／名词：过度工作；过劳）","overtime（形容词：加班的；超时的）","overtired（形容词：过度疲劳的）"]
+      "overtime":["overwork（动词／名词：过度工作；过劳）","overtime（形容词：加班的；超时的）","overtired（形容词：过度疲劳的）"],
+      "recharge":["rechargeable（形容词：可充电的）","recharging（名词／动名词：充电；恢复精力）","recharged（形容词：恢复精力的）"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[];item.forms=wordForms[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
