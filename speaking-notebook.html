@@ -131,6 +131,12 @@
       {type:"word",word:"bent",ipa:"/bent/",part:"形容词 / 动词 adjective / verb",meaning:"adj. 弯曲的；弯下腰的；有……倾向的；v. bend 的过去式和过去分词：弯曲；使弯曲；弯腰",scene:"描述形状变化、姿势或倾向",example:"The metal frame was bent after the accident.",translation:"事故后，金属框架弯了。"},
       {type:"phrase",word:"a bit of",ipa:"/ə bɪt əv/",part:"短语 quantifier phrase",meaning:"一点；少量的；一小部分（后接不可数名词，也常用于委婉表达）",scene:"描述少量事物或轻微程度",example:"I need a bit of time to think about it.",translation:"我需要一点时间考虑一下。"},
       {type:"phrase",word:"land right on...",ipa:"/lænd raɪt ɑːn/",part:"短语 verb pattern",meaning:"正好落在……上；恰好落到……上（on 后接落点或目标）",scene:"描述物体准确落点或命中目标",example:"The coin landed right on the table.",translation:"硬币正好落在桌子上。"},
+      {type:"word",word:"refund",ipa:"/ˈriːfʌnd/",part:"名词 / 动词 noun / verb",meaning:"n. 退款；偿还款；v. 退还（款项）；给……退款",scene:"购物售后与费用处理",example:"The store offered me a full refund because the item was damaged.",translation:"因为商品损坏，商店给我办理了全额退款。"},
+      {type:"word",word:"policy",ipa:"/ˈpɑːləsi/",part:"名词 noun",meaning:"政策；方针；原则；（机构的）规定；保险单",scene:"谈论规则、规定或处理原则",example:"The store’s return policy allows refunds within thirty days.",translation:"这家商店的退货政策允许在三十天内退款。"},
+      {type:"word",word:"disenchant",ipa:"/ˌdɪsɪnˈtʃænt/",part:"动词 verb",meaning:"使不再抱有幻想；使失望；使醒悟到现实",scene:"描述期待落空或理想破灭",example:"The poor service quickly disenchanted me with the brand.",translation:"糟糕的服务很快让我对这个品牌不再抱有幻想。"},
+      {type:"word",word:"possess",ipa:"/pəˈzes/",part:"动词 verb",meaning:"拥有；持有；具有（某种品质、能力或特征）；控制（较正式）",scene:"描述拥有物品、能力或特征",example:"She possesses excellent communication skills.",translation:"她具备出色的沟通能力。"},
+      {type:"phrase",word:"happen to",ipa:"/ˈhæpən tuː/",part:"短语 verb pattern",meaning:"碰巧；恰好；发生在……身上；碰巧做某事",scene:"表达偶然情况或礼貌询问",example:"I happened to see your message this morning.",translation:"我今天早上碰巧看到了你的消息。"},
+      {type:"phrase",word:"after all",ipa:"/ˈæftɚ ɔːl/",part:"短语 discourse marker",meaning:"毕竟；终究；到底；别忘了（用于补充理由、修正判断或强调事实）",scene:"补充理由、回顾事实或强调结果",example:"Let’s take an umbrella after all—the forecast says it may rain.",translation:"我们还是带把伞吧，毕竟天气预报说可能会下雨。"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -226,6 +232,12 @@
       "bent":["bend something（使某物弯曲）","be bent out of shape（气得不得了／心烦意乱）","bent on doing something（决意做某事）"],
       "a bit of":["a bit of time（一点时间）","a bit of help（一点帮助）","a little bit of（一点点，语气更口语）"],
       "land right on...":["land on the roof（落在屋顶上）","land right on target（正好命中目标）","land safely（安全着陆）"],
+      "refund":["get a refund（获得退款）","a full refund（全额退款）","refund someone’s money（退还某人的钱）"],
+      "policy":["return policy（退货政策）","company policy（公司政策／规定）","follow a policy（遵守政策）"],
+      "disenchant":["be disenchanted with something（对某事物不再抱有幻想）","disenchant someone with something（使某人对某事失望）","feel disenchanted（感到失望）"],
+      "possess":["possess a skill（具备一项技能）","possess the ability to do（具备做某事的能力）","possess something（拥有某物，较正式）"],
+      "happen to":["happen to know（碰巧知道）","happen to see（碰巧看到）","What happened to ...?（……怎么了？／……去哪了？）"],
+      "after all":["not ... after all（毕竟并不是……）","after all, ...（毕竟……）","as it turned out（结果；事实证明）"],
     };
     const wordForms = {
       "billiards":["billiards（名词：台球运动）","billiard（形容词：台球的）"],
@@ -270,6 +282,10 @@
       "rim":["rimmed（形容词：有边缘的；有……边的）","rimless（形容词：无边框的）","rimmed（动词：形成边缘）"],
       "somehow":["some（限定词／代词：某个；一些）","how（副词：怎样；如何）","somehow（副词：不知怎么地）"],
       "bent":["bend（动词：弯曲）","bending（名词／形容词：弯曲；弯曲的）","bendy（形容词：柔韧易弯的，口语）"]
+      ,"refund":["refundable（形容词：可退款的）","refund（名词：退款）","refunded（形容词／过去分词：已退款的）"],
+      "policy":["policies（名词复数：政策；规定）","policyholder（名词：保单持有人）","policymaker（名词：政策制定者）"],
+      "disenchant":["disenchanted（形容词：不再抱有幻想的）","disenchantment（名词：失望；理想破灭）","enchant（动词：使着迷）"],
+      "possess":["possession（名词：拥有；所有物）","possessive（形容词：占有欲强的；所有格的）","possessor（名词：拥有者）"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[];item.forms=wordForms[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
