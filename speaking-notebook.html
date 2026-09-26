@@ -144,6 +144,12 @@
       {type:"phrase",word:"keep in touch",ipa:"/kiːp ɪn tʌtʃ/",part:"短语 verb phrase",meaning:"保持联系；保持联络",scene:"谈论朋友、同事或熟人之间的联系",example:"Let’s keep in touch after you move to another city.",translation:"你搬到另一个城市后，我们保持联系吧。"},
       {type:"phrase",word:"from time to time",ipa:"/frəm taɪm tə taɪm/",part:"短语 adverbial phrase",meaning:"偶尔；有时；不时",scene:"描述不规律但会重复发生的事情",example:"I still check in with my old classmates from time to time.",translation:"我偶尔还会联系以前的同学。"},
       {type:"phrase",word:"over the past year",ipa:"/ˈoʊvɚ ðə pæst jɪr/",part:"短语 time expression",meaning:"在过去一年里；过去这一年间（常与现在完成时连用）",scene:"总结过去一年发生的变化或经历",example:"My English has improved a lot over the past year.",translation:"过去一年里，我的英语进步了很多。"},
+      {type:"word",word:"authentic",ipa:"/ɔːˈθentɪk/",part:"形容词 adjective",meaning:"真实的；忠于本色的；正宗的；不是仿制或冒充的",scene:"描述真实感、原创性或正宗程度",example:"This restaurant serves authentic Sichuan food.",translation:"这家餐厅供应正宗的川菜。"},
+      {type:"word",word:"spicy",ipa:"/ˈspaɪsi/",part:"形容词 adjective",meaning:"辣的；辛辣的；刺激的；带有争议或挑逗性的",scene:"描述食物味道或内容风格",example:"The noodles are too spicy for me, but they smell delicious.",translation:"这面条对我来说太辣了，但闻起来很香。"},
+      {type:"word",word:"numb",ipa:"/nʌm/",part:"形容词 / 动词 adjective / verb",meaning:"adj. 麻木的；失去知觉的；无动于衷的；v. 使麻木；使失去知觉",scene:"描述身体感觉或情绪反应",example:"My fingers went numb in the cold weather.",translation:"天气寒冷，我的手指都冻麻了。"},
+      {type:"word",word:"lip",ipa:"/lɪp/",part:"名词 noun",meaning:"嘴唇；唇部；（容器或洞口的）边缘；冒失的话（常用复数 lips）",scene:"描述身体部位、容器边缘或说话方式",example:"She put a little lip balm on her dry lips.",translation:"她在干燥的嘴唇上涂了一点润唇膏。"},
+      {type:"phrase",word:"wait in line",ipa:"/weɪt ɪn laɪn/",part:"短语 verb phrase",meaning:"排队等候（美式英语）；英式英语常说 wait in a queue",scene:"购物、入场或办理事务时排队",example:"We had to wait in line for twenty minutes to get tickets.",translation:"我们不得不排队二十分钟买票。"},
+      {type:"phrase",word:"get a table",ipa:"/ɡet ə ˈteɪbəl/",part:"短语 verb phrase",meaning:"在餐厅找到空桌；安排到座位；订到桌位",scene:"餐厅就餐与订位",example:"Do you think we can get a table without a reservation?",translation:"你觉得我们不预约能找到空桌吗？"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -252,6 +258,12 @@
       "keep in touch":["keep in touch with someone（与某人保持联系）","stay in touch（保持联系）","lose touch（失去联系）"],
       "from time to time":["once in a while（偶尔）","every now and then（时不时）","occasionally（偶尔，较正式）"],
       "over the past year":["over the past few months（过去几个月里）","in the past year（在过去一年中）","over the years（这些年来）"],
+      "authentic":["an authentic product（正品）","authentic food（正宗食物）","be true to yourself（忠于自己）"],
+      "spicy":["spicy food（辛辣食物）","make something spicy（把某物做得辣一些）","spicy debate（有争议的讨论）"],
+      "numb":["feel numb（感到麻木）","go numb（变麻木／失去知觉）","numb with cold（冻得麻木）"],
+      "lip":["bite your lip（咬嘴唇）","lip balm（润唇膏）","read someone’s lips（读某人的唇语）"],
+      "wait in line":["wait in a queue（排队等候，英式英语）","stand in line（排队）","cut in line（插队）"],
+      "get a table":["get a table for two（找到两人桌）","book a table（预订桌位）","a table is available（有空桌）"],
     };
     const wordForms = {
       "billiards":["billiards（名词：台球运动）","billiard（形容词：台球的）"],
@@ -301,7 +313,11 @@
       "disenchant":["disenchanted（形容词：不再抱有幻想的）","disenchantment（名词：失望；理想破灭）","enchant（动词：使着迷）"],
       "possess":["possession（名词：拥有；所有物）","possessive（形容词：占有欲强的；所有格的）","possessor（名词：拥有者）"],
       "tournament":["tournament（名词：锦标赛）","tournament-style（形容词：锦标赛形式的）"],
-      "straight":["straighten（动词：弄直；整理）","straightforward（形容词：直截了当的；简单明了的）","straightness（名词：直；坦率）"]
+      "straight":["straighten（动词：弄直；整理）","straightforward（形容词：直截了当的；简单明了的）","straightness（名词：直；坦率）"],
+      "authentic":["authentically（副词：真实地；正宗地）","authenticity（名词：真实性；正宗性）","authenticate（动词：验证；证明是真实的）"],
+      "spicy":["spice（名词：香料；动词：加香料）","spiciness（名词：辣度；辛辣）","spicily（副词：辛辣地）"],
+      "numb":["numbness（名词：麻木；失去知觉）","numbingly（副词：令人麻木地）","numbed（形容词／过去分词：麻木的）"],
+      "lip":["lips（名词复数：嘴唇）","lipstick（名词：口红）","lipless（形容词：无唇的；没有嘴唇的）"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[];item.forms=wordForms[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
