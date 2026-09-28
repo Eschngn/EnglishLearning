@@ -152,6 +152,13 @@
       {type:"phrase",word:"get a table",ipa:"/ɡet ə ˈteɪbəl/",part:"短语 verb phrase",meaning:"在餐厅找到空桌；安排到座位；订到桌位",scene:"餐厅就餐与订位",example:"Do you think we can get a table without a reservation?",translation:"你觉得我们不预约能找到空桌吗？"},
       {type:"phrase",word:"go by",ipa:"/ɡoʊ baɪ/",part:"短语 phrasal verb",meaning:"经过（某处）；（时间）流逝；依据……判断；用某名称或名字",scene:"描述经过、时间流逝或判断依据",example:"As the years go by, you’ll appreciate the experience more.",translation:"随着时间流逝，你会更加珍惜这段经历。"},
       {type:"phrase",word:"head to",ipa:"/hed tuː/",part:"短语 phrasal verb",meaning:"前往；去往（某地或某个活动）",scene:"描述出发方向与目的地",example:"We’re going to head to the station after breakfast.",translation:"我们吃完早餐后要去车站。"},
+      {type:"word",word:"coworker",ipa:"/ˈkoʊˌwɝːkər/",part:"名词 noun",meaning:"同事；一起工作的人",scene:"工作关系与职场交流",example:"One of my coworkers helped me finish the report.",translation:"我的一位同事帮我完成了报告。"},
+      {type:"word",word:"workload",ipa:"/ˈwɝːkloʊd/",part:"名词 noun",meaning:"工作量；工作负担",scene:"描述工作安排与任务多少",example:"My workload has increased since the team became smaller.",translation:"团队人数减少后，我的工作量增加了。"},
+      {type:"word",word:"pace",ipa:"/peɪs/",part:"名词 / 动词 noun / verb",meaning:"n. 速度；步调；节奏；一步；v. 踱步；调整节奏；以某种速度前进",scene:"描述工作、学习或活动的速度",example:"I need to slow down the pace and take a short break.",translation:"我需要放慢节奏，短暂休息一下。"},
+      {type:"word",word:"intense",ipa:"/ɪnˈtens/",part:"形容词 adjective",meaning:"强烈的；剧烈的；紧张的；集中的；非常认真的",scene:"描述感受、活动或竞争的强度",example:"The final match was intense from beginning to end.",translation:"决赛从头到尾都很激烈。"},
+      {type:"word",word:"distract",ipa:"/dɪˈstrækt/",part:"动词 verb",meaning:"使分心；使注意力转移；使烦乱",scene:"描述注意力被打断或转移",example:"It’s easy to get distracted by notifications while working.",translation:"工作时很容易被通知分散注意力。"},
+      {type:"phrase",word:"take time off",ipa:"/teɪk taɪm ɔːf/",part:"短语 verb phrase",meaning:"请假；休息一段时间；暂时离开工作或学习",scene:"安排休假、休息或暂离日常事务",example:"I’m going to take some time off after the project is finished.",translation:"项目完成后，我打算休息一段时间。"},
+      {type:"phrase",word:"take ... days off",ipa:"/teɪk ... deɪz ɔːf/",part:"短语 verb pattern",meaning:"请……天假；休息……天（天数可以替换）",scene:"具体安排几天休假或不上班",example:"I’m going to take three days off next month.",translation:"我下个月打算请三天假。"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -268,6 +275,13 @@
       "get a table":["get a table for two（找到两人桌）","book a table（预订桌位）","a table is available（有空桌）"],
       "go by":["go by quickly（很快过去）","go by a name（使用某个名字）","go by the rules（按照规则）"],
       "head to":["head to work（去上班）","head to the airport（前往机场）","head back（返回）"],
+      "coworker":["a close coworker（关系亲近的同事）","work with a coworker（与同事合作）","a former coworker（前同事）"],
+      "workload":["a heavy workload（繁重的工作量）","manage your workload（管理工作量）","share the workload（分担工作量）"],
+      "pace":["at your own pace（按照自己的节奏）","keep pace with（跟上……的步调）","set the pace（带头；定下节奏）"],
+      "intense":["intense pressure（巨大压力）","intense competition（激烈竞争）","intense training（高强度训练）"],
+      "distract":["get distracted（分心）","distract someone from something（使某人无法专注于某事）","a distraction（令人分心的事物）"],
+      "take time off":["take a day off（请一天假）","take some time off（休息一段时间）","time off work（工作休假）"],
+      "take ... days off":["take two days off（请两天假）","take a few days off（请几天假）","get days off（获得休息日）"],
     };
     const wordForms = {
       "billiards":["billiards（名词：台球运动）","billiard（形容词：台球的）"],
@@ -318,6 +332,11 @@
       "possess":["possession（名词：拥有；所有物）","possessive（形容词：占有欲强的；所有格的）","possessor（名词：拥有者）"],
       "tournament":["tournament（名词：锦标赛）","tournament-style（形容词：锦标赛形式的）"],
       "straight":["straighten（动词：弄直；整理）","straightforward（形容词：直截了当的；简单明了的）","straightness（名词：直；坦率）"],
+      "coworker":["coworkers（名词复数：同事们）","co-worker（名词：同事，另一种拼写）"],
+      "workload":["work（名词／动词：工作）","workload（名词：工作量）","workload-related（形容词：与工作量有关的）"],
+      "pace":["paced（形容词／过去式：有节奏的；踱步）","pacing（名词／动名词：节奏；踱步）","pacey（形容词：节奏快的，英式英语）"],
+      "intense":["intensify（动词：增强）","intensely（副词：强烈地）","intensity（名词：强度）"],
+      "distract":["distracted（形容词：分心的）","distracting（形容词：令人分心的）","distraction（名词：分心；干扰）"],
       "authentic":["authentically（副词：真实地；正宗地）","authenticity（名词：真实性；正宗性）","authenticate（动词：验证；证明是真实的）"],
       "spicy":["spice（名词：香料；动词：加香料）","spiciness（名词：辣度；辛辣）","spicily（副词：辛辣地）"],
       "numb":["numbness（名词：麻木；失去知觉）","numbingly（副词：令人麻木地）","numbed（形容词／过去分词：麻木的）"],
