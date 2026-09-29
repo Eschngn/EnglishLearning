@@ -159,6 +159,12 @@
       {type:"word",word:"distract",ipa:"/dɪˈstrækt/",part:"动词 verb",meaning:"使分心；使注意力转移；使烦乱",scene:"描述注意力被打断或转移",example:"It’s easy to get distracted by notifications while working.",translation:"工作时很容易被通知分散注意力。"},
       {type:"phrase",word:"take time off",ipa:"/teɪk taɪm ɔːf/",part:"短语 verb phrase",meaning:"请假；休息一段时间；暂时离开工作或学习",scene:"安排休假、休息或暂离日常事务",example:"I’m going to take some time off after the project is finished.",translation:"项目完成后，我打算休息一段时间。"},
       {type:"phrase",word:"take ... days off",ipa:"/teɪk ... deɪz ɔːf/",part:"短语 verb pattern",meaning:"请……天假；休息……天（天数可以替换）",scene:"具体安排几天休假或不上班",example:"I’m going to take three days off next month.",translation:"我下个月打算请三天假。"},
+      {type:"word",word:"chill",ipa:"/tʃɪl/",part:"动词 / 名词 / 形容词 verb / noun / adjective",meaning:"v. 冷却；使放松；放松休息；n. 寒意；放松；adj. 寒冷的；轻松的（口语）",scene:"描述温度、放松状态或轻松氛围",example:"I’m going to chill at home tonight and watch a movie.",translation:"今晚我打算在家放松，看部电影。"},
+      {type:"word",word:"solid",ipa:"/ˈsɑːlɪd/",part:"形容词 / 名词 adjective / noun",meaning:"adj. 固体的；坚固的；结实的；可靠的；纯色的；n. 固体；立体；实心物体",scene:"描述物体结构、可靠性或颜色",example:"The table is made of solid wood and feels very sturdy.",translation:"这张桌子由实木制成，感觉非常结实。"},
+      {type:"word",word:"light",ipa:"/laɪt/",part:"名词 / 形容词 / 动词 noun / adjective / verb",meaning:"n. 光；光线；灯；灯光；交通信号灯；点火器；亮色；眼神或表情中的光彩；adj. 轻的；明亮的；浅色的；清淡的；不严肃的；容易消化的；空闲的；v. 点燃；照亮；使变亮；（火柴、灯等）点着；（鸟或物体）落在；减轻、变轻（lighten 的较口语含义）",scene:"描述光线、重量、颜色、食物、语气或点燃动作",example:"The room needs more light. This bag is light, and the soup has a light flavor. Please light a candle, and be careful—the traffic light just changed.",translation:"房间需要更多光线。这个包很轻，而且汤的味道很清淡。请点根蜡烛，小心——交通灯刚变了。"},
+      {type:"phrase",word:"take back",ipa:"/teɪk bæk/",part:"短语 phrasal verb",meaning:"拿回；收回（说过的话）；退回；使回忆起；带回原来的状态",scene:"退货、收回言论或回到过去的话题",example:"I take back what I said—I was too frustrated.",translation:"我收回我说的话——刚才我太沮丧了。"},
+      {type:"phrase",word:"take one’s time",ipa:"/teɪk wʌnz taɪm/",part:"短语 expression",meaning:"慢慢来；别着急；从容完成某事",scene:"安慰或允许某人按自己的节奏做事",example:"Take your time—we have plenty of time before the meeting.",translation:"慢慢来——离会议还有充足时间。"},
+      {type:"phrase",word:"work through",ipa:"/wɝːk θruː/",part:"短语 phrasal verb",meaning:"解决；处理（问题或困难）；逐步完成；熬过（困难时期）",scene:"描述逐步解决问题或度过难关",example:"We’ll work through the problems one at a time.",translation:"我们会一次解决一个问题。"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -282,6 +288,12 @@
       "distract":["get distracted（分心）","distract someone from something（使某人无法专注于某事）","a distraction（令人分心的事物）"],
       "take time off":["take a day off（请一天假）","take some time off（休息一段时间）","time off work（工作休假）"],
       "take ... days off":["take two days off（请两天假）","take a few days off（请几天假）","get days off（获得休息日）"],
+      "chill":["chill out（放松；冷静下来）","chill at home（在家放松）","a chill evening（轻松的夜晚）"],
+      "solid":["solid wood（实木）","a solid plan（可靠的计划）","solid color（纯色）"],
+      "light":["turn on the light（开灯）","light food（清淡食物）","a light bag（轻便的包）"],
+      "take back":["take something back（把某物拿回／退回）","take back what you said（收回你说的话）","take someone back（使某人回忆起过去）"],
+      "take one’s time":["take your time（慢慢来）","take your time doing something（从容做某事）","there’s no need to hurry（没必要着急）"],
+      "work through":["work through a problem（解决问题）","work through difficulties（克服困难）","work through a checklist（逐项完成清单）"],
     };
     const wordForms = {
       "billiards":["billiards（名词：台球运动）","billiard（形容词：台球的）"],
@@ -341,6 +353,9 @@
       "spicy":["spice（名词：香料；动词：加香料）","spiciness（名词：辣度；辛辣）","spicily（副词：辛辣地）"],
       "numb":["numbness（名词：麻木；失去知觉）","numbingly（副词：令人麻木地）","numbed（形容词／过去分词：麻木的）"],
       "lip":["lips（名词复数：嘴唇）","lipstick（名词：口红）","lipless（形容词：无唇的；没有嘴唇的）"]
+      ,"chill":["chilled（形容词：冷藏的；冷静的）","chilling（形容词：令人寒心的；冷却的）","chilliness（名词：寒冷；冷淡）"],
+      "solid":["solidify（动词：凝固；巩固）","solidly（副词：坚固地；扎实地）","solidity（名词：坚固；可靠）"],
+      "light":["lighten（动词：变轻；照亮；减轻）","lightly（副词：轻轻地；轻微地）","lighting（名词：照明；灯光设备）"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[];item.forms=wordForms[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
