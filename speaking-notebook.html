@@ -165,6 +165,8 @@
       {type:"phrase",word:"take back",ipa:"/teɪk bæk/",part:"短语 phrasal verb",meaning:"拿回；收回（说过的话）；退回；使回忆起；带回原来的状态",scene:"退货、收回言论或回到过去的话题",example:"I take back what I said—I was too frustrated.",translation:"我收回我说的话——刚才我太沮丧了。"},
       {type:"phrase",word:"take one’s time",ipa:"/teɪk wʌnz taɪm/",part:"短语 expression",meaning:"慢慢来；别着急；从容完成某事",scene:"安慰或允许某人按自己的节奏做事",example:"Take your time—we have plenty of time before the meeting.",translation:"慢慢来——离会议还有充足时间。"},
       {type:"phrase",word:"work through",ipa:"/wɝːk θruː/",part:"短语 phrasal verb",meaning:"解决；处理（问题或困难）；逐步完成；熬过（困难时期）",scene:"描述逐步解决问题或度过难关",example:"We’ll work through the problems one at a time.",translation:"我们会一次解决一个问题。"},
+      {type:"word",word:"layover",ipa:"/ˈleɪˌoʊvɚ/",part:"名词 noun",meaning:"中途停留；转机停留（长途旅行中在两段航程之间等待下一班飞机的时间）",scene:"机场与旅行安排",example:"We have a three-hour layover in Seoul before our flight to Sydney.",translation:"我们在飞往悉尼的航班前要在首尔转机停留三个小时。"},
+      {type:"phrase",word:"come over",ipa:"/kʌm ˈoʊvɚ/",part:"短语 phrasal verb",meaning:"过来；顺便来访；到某人所在的地方；（感觉或想法）突然产生",scene:"邀请来访与描述感觉",example:"Why don’t you come over for dinner sometime this week?",translation:"你这周找个时间过来吃晚饭怎么样？"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -355,7 +357,9 @@
       "lip":["lips（名词复数：嘴唇）","lipstick（名词：口红）","lipless（形容词：无唇的；没有嘴唇的）"]
       ,"chill":["chilled（形容词：冷藏的；冷静的）","chilling（形容词：令人寒心的；冷却的）","chilliness（名词：寒冷；冷淡）"],
       "solid":["solidify（动词：凝固；巩固）","solidly（副词：坚固地；扎实地）","solidity（名词：坚固；可靠）"],
-      "light":["lighten（动词：变轻；照亮；减轻）","lightly（副词：轻轻地；轻微地）","lighting（名词：照明；灯光设备）"]
+      "light":["lighten（动词：变轻；照亮；减轻）","lightly（副词：轻轻地；轻微地）","lighting（名词：照明；灯光设备）"],
+      "layover":["a short layover（短暂中转停留）","a long layover（较长的转机停留）","have a layover in + 地点（在某地转机停留）"],
+      "come over":["come over to my place（到我家来）","come over for dinner（过来吃晚饭）","come over and + 动词（过来做某事）"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[];item.forms=wordForms[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
