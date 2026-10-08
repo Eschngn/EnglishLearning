@@ -167,6 +167,13 @@
       {type:"phrase",word:"work through",ipa:"/wɝːk θruː/",part:"短语 phrasal verb",meaning:"解决；处理（问题或困难）；逐步完成；熬过（困难时期）",scene:"描述逐步解决问题或度过难关",example:"We’ll work through the problems one at a time.",translation:"我们会一次解决一个问题。"},
       {type:"word",word:"layover",ipa:"/ˈleɪˌoʊvɚ/",part:"名词 noun",meaning:"中途停留；转机停留（长途旅行中在两段航程之间等待下一班飞机的时间）",scene:"机场与旅行安排",example:"We have a three-hour layover in Seoul before our flight to Sydney.",translation:"我们在飞往悉尼的航班前要在首尔转机停留三个小时。"},
       {type:"phrase",word:"come over",ipa:"/kʌm ˈoʊvɚ/",part:"短语 phrasal verb",meaning:"过来；顺便来访；到某人所在的地方；（感觉或想法）突然产生",scene:"邀请来访与描述感觉",example:"Why don’t you come over for dinner sometime this week?",translation:"你这周找个时间过来吃晚饭怎么样？"},
+      {type:"word",word:"scent",ipa:"/sent/",part:"名词 / 动词 noun / verb",meaning:"n. 气味；香味；香水；v. 闻到；察觉；发出气味",scene:"描述气味与嗅觉",example:"The scent of osmanthus filled the air after the rain.",translation:"雨后空气中弥漫着桂花的香味。"},
+      {type:"word",word:"osmanthus",ipa:"/ɑːzˈmænθəs/",part:"名词 noun",meaning:"桂花；木樨（常见于茶、甜点和香味描述）",scene:"花卉与气味",example:"Osmanthus flowers bloom in late summer and smell wonderfully sweet.",translation:"桂花在夏末开放，闻起来甜甜的。"},
+      {type:"word",word:"sweat",ipa:"/swet/",part:"名词 / 动词 noun / verb",meaning:"n. 汗；汗水；v. 出汗；因紧张或炎热而冒汗",scene:"描述身体反应与运动",example:"I started to sweat after walking uphill in the sun.",translation:"在阳光下爬坡后，我开始出汗。"},
+      {type:"word",word:"nearly",ipa:"/ˈnɪrli/",part:"副词 adverb",meaning:"几乎；差不多；将近（表示接近某个数量、时间或状态）",scene:"表达接近程度",example:"I’ve nearly finished the report, so I’ll send it soon.",translation:"我差不多写完报告了，很快就发出去。"},
+      {type:"word",word:"bonus",ipa:"/ˈboʊnəs/",part:"名词 noun",meaning:"奖金；红利；额外的好处或奖励",scene:"工作奖励与额外收获",example:"The year-end bonus was a welcome surprise.",translation:"年终奖金是一个令人惊喜的额外收获。"},
+      {type:"phrase",word:"lunch break",ipa:"/lʌntʃ breɪk/",part:"短语 noun phrase",meaning:"午休；午餐休息时间",scene:"工作与日程安排",example:"Let’s talk about it during my lunch break.",translation:"我们午休时聊这件事吧。"},
+      {type:"phrase",word:"get to do",ipa:"/ɡet tə duː/",part:"短语 verb pattern",meaning:"有机会做某事；可以做某事（强调获得机会或许可）",scene:"表达机会与经历",example:"I get to work with people from different countries.",translation:"我有机会和来自不同国家的人一起工作。"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -339,7 +346,12 @@
       "recharge":["rechargeable（形容词：可充电的）","recharging（名词／动名词：充电；恢复精力）","recharged（形容词：恢复精力的）"],
       "rim":["rimmed（形容词：有边缘的；有……边的）","rimless（形容词：无边框的）","rimmed（动词：形成边缘）"],
       "somehow":["some（限定词／代词：某个；一些）","how（副词：怎样；如何）","somehow（副词：不知怎么地）"],
-      "bent":["bend（动词：弯曲）","bending（名词／形容词：弯曲；弯曲的）","bendy（形容词：柔韧易弯的，口语）"]
+      "bent":["bend（动词：弯曲）","bending（名词／形容词：弯曲；弯曲的）","bendy（形容词：柔韧易弯的，口语）"],
+      "scent":["scented（形容词：有香味的）","scentless（形容词：无气味的）","scenting（动词：闻到；察觉）"],
+      "osmanthus":["osmanthus（名词：桂花）","sweet osmanthus（名词：桂花）"],
+      "sweat":["sweaty（形容词：出汗的）","sweatiness（名词：出汗；汗湿）","sweated（动词过去式：出汗）"],
+      "nearly":["near（形容词／副词：接近的／接近地）","nearness（名词：接近）"],
+      "bonus":["bonuses（名词复数：奖金；额外奖励）","bonus-related（形容词：与奖金有关的）"]
       ,"refund":["refundable（形容词：可退款的）","refund（名词：退款）","refunded（形容词／过去分词：已退款的）"],
       "policy":["policies（名词复数：政策；规定）","policyholder（名词：保单持有人）","policymaker（名词：政策制定者）"],
       "disenchant":["disenchanted（形容词：不再抱有幻想的）","disenchantment（名词：失望；理想破灭）","enchant（动词：使着迷）"],
@@ -359,7 +371,14 @@
       "solid":["solidify（动词：凝固；巩固）","solidly（副词：坚固地；扎实地）","solidity（名词：坚固；可靠）"],
       "light":["lighten（动词：变轻；照亮；减轻）","lightly（副词：轻轻地；轻微地）","lighting（名词：照明；灯光设备）"],
       "layover":["a short layover（短暂中转停留）","a long layover（较长的转机停留）","have a layover in + 地点（在某地转机停留）"],
-      "come over":["come over to my place（到我家来）","come over for dinner（过来吃晚饭）","come over and + 动词（过来做某事）"]
+      "come over":["come over to my place（到我家来）","come over for dinner（过来吃晚饭）","come over and + 动词（过来做某事）"],
+      "scent":["the scent of flowers（花香）","a fresh scent（清新的气味）","scent something out（凭气味察觉某物）"],
+      "osmanthus":["osmanthus tea（桂花茶）","sweet osmanthus（桂花）","the scent of osmanthus（桂花香）"],
+      "sweat":["break a sweat（出汗；开始费力）","sweat heavily（大量出汗）","sweat through a shirt（汗水浸透衬衫）"],
+      "nearly":["nearly finished（差不多完成）","nearly every day（几乎每天）","nearly impossible（几乎不可能）"],
+      "bonus":["a year-end bonus（年终奖金）","a bonus point（额外加分）","an added bonus（额外的好处）"],
+      "lunch break":["take a lunch break（休午餐时间）","during lunch break（午休期间）","a short lunch break（短暂午休）"],
+      "get to do":["get to meet someone（有机会见到某人）","get to choose（可以选择）","get to know someone（逐渐了解某人）"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[];item.forms=wordForms[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
