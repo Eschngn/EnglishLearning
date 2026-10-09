@@ -174,6 +174,10 @@
       {type:"word",word:"bonus",ipa:"/ˈboʊnəs/",part:"名词 noun",meaning:"奖金；红利；额外的好处或奖励",scene:"工作奖励与额外收获",example:"The year-end bonus was a welcome surprise.",translation:"年终奖金是一个令人惊喜的额外收获。"},
       {type:"phrase",word:"lunch break",ipa:"/lʌntʃ breɪk/",part:"短语 noun phrase",meaning:"午休；午餐休息时间",scene:"工作与日程安排",example:"Let’s talk about it during my lunch break.",translation:"我们午休时聊这件事吧。"},
       {type:"phrase",word:"get to do",ipa:"/ɡet tə duː/",part:"短语 verb pattern",meaning:"有机会做某事；可以做某事（强调获得机会或许可）",scene:"表达机会与经历",example:"I get to work with people from different countries.",translation:"我有机会和来自不同国家的人一起工作。"},
+      {type:"word",word:"extra",ipa:"/ˈekstrə/",part:"形容词 / 名词 / 副词 adjective / noun / adverb",meaning:"adj. 额外的；多余的；特别的；n. 额外的人或物；临时演员；adv. 额外地；特别地",scene:"表达额外数量或程度",example:"Could you bring an extra chair for our guest?",translation:"你能为我们的客人再拿一把椅子吗？"},
+      {type:"word",word:"workweek",ipa:"/ˈwɝːkwiːk/",part:"名词 noun",meaning:"工作周；一周的工作时间（通常指周一至周五）",scene:"工作安排与时间",example:"I try to plan my workouts around a busy workweek.",translation:"我会根据繁忙的工作周安排锻炼。"},
+      {type:"word",word:"sluggish",ipa:"/ˈslʌɡɪʃ/",part:"形容词 adjective",meaning:"迟缓的；行动迟钝的；无精打采的；（经济等）低迷的",scene:"描述状态或速度",example:"I feel sluggish when I don’t get enough sleep.",translation:"睡眠不足时，我会觉得无精打采。"},
+      {type:"word",word:"quarter",ipa:"/ˈkwɔːrtər/",part:"名词 / 动词 / 形容词 noun / verb / adjective",meaning:"n. 四分之一；一刻钟；季度；25美分硬币；v. 把……分成四等份；adj. 四分之一的",scene:"表达时间、比例与商业周期",example:"The company expects sales to grow next quarter.",translation:"公司预计下个季度销售额会增长。"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -351,7 +355,11 @@
       "osmanthus":["osmanthus（名词：桂花）","sweet osmanthus（名词：桂花）"],
       "sweat":["sweaty（形容词：出汗的）","sweatiness（名词：出汗；汗湿）","sweated（动词过去式：出汗）"],
       "nearly":["near（形容词／副词：接近的／接近地）","nearness（名词：接近）"],
-      "bonus":["bonuses（名词复数：奖金；额外奖励）","bonus-related（形容词：与奖金有关的）"]
+      "bonus":["bonuses（名词复数：奖金；额外奖励）","bonus-related（形容词：与奖金有关的）"],
+      "extra":["extras（名词复数：额外事项；临时演员）","extraordinary（形容词：非凡的；特别的）","extraneously（副词：附带地，较少用）"],
+      "workweek":["workweeks（名词复数：工作周）","workweek-long（形容词：持续一周工作时间的）"],
+      "sluggish":["sluggishly（副词：迟缓地）","sluggishness（名词：迟缓；无精打采）"],
+      "quarter":["quarterly（形容词／副词：季度的；按季度地）","quarters（名词复数：季度；住处；四分之一）"]
       ,"refund":["refundable（形容词：可退款的）","refund（名词：退款）","refunded（形容词／过去分词：已退款的）"],
       "policy":["policies（名词复数：政策；规定）","policyholder（名词：保单持有人）","policymaker（名词：政策制定者）"],
       "disenchant":["disenchanted（形容词：不再抱有幻想的）","disenchantment（名词：失望；理想破灭）","enchant（动词：使着迷）"],
@@ -378,7 +386,11 @@
       "nearly":["nearly finished（差不多完成）","nearly every day（几乎每天）","nearly impossible（几乎不可能）"],
       "bonus":["a year-end bonus（年终奖金）","a bonus point（额外加分）","an added bonus（额外的好处）"],
       "lunch break":["take a lunch break（休午餐时间）","during lunch break（午休期间）","a short lunch break（短暂午休）"],
-      "get to do":["get to meet someone（有机会见到某人）","get to choose（可以选择）","get to know someone（逐渐了解某人）"]
+      "get to do":["get to meet someone（有机会见到某人）","get to choose（可以选择）","get to know someone（逐渐了解某人）"],
+      "extra":["extra time（额外时间）","an extra charge（额外费用）","go the extra mile（付出额外努力）"],
+      "workweek":["a five-day workweek（五天工作周）","a shorter workweek（更短的工作周）","during the workweek（工作周期间）"],
+      "sluggish":["feel sluggish（感到无精打采）","sluggish performance（迟缓的表现）","a sluggish economy（低迷的经济）"],
+      "quarter":["next quarter（下个季度）","a quarter of an hour（一刻钟）","quarterly report（季度报告）"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[];item.forms=wordForms[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
