@@ -178,6 +178,12 @@
       {type:"word",word:"workweek",ipa:"/ˈwɝːkwiːk/",part:"名词 noun",meaning:"工作周；一周的工作时间（通常指周一至周五）",scene:"工作安排与时间",example:"I try to plan my workouts around a busy workweek.",translation:"我会根据繁忙的工作周安排锻炼。"},
       {type:"word",word:"sluggish",ipa:"/ˈslʌɡɪʃ/",part:"形容词 adjective",meaning:"迟缓的；行动迟钝的；无精打采的；（经济等）低迷的",scene:"描述状态或速度",example:"I feel sluggish when I don’t get enough sleep.",translation:"睡眠不足时，我会觉得无精打采。"},
       {type:"word",word:"quarter",ipa:"/ˈkwɔːrtər/",part:"名词 / 动词 / 形容词 noun / verb / adjective",meaning:"n. 四分之一；一刻钟；季度；25美分硬币；v. 把……分成四等份；adj. 四分之一的",scene:"表达时间、比例与商业周期",example:"The company expects sales to grow next quarter.",translation:"公司预计下个季度销售额会增长。"},
+      {type:"word",word:"portrait",ipa:"/ˈpɔːrtrət/",part:"名词 noun",meaning:"肖像；肖像画；人像照片；对某人或某事的生动描述",scene:"摄影与艺术",example:"She commissioned a portrait of her grandparents.",translation:"她请人画了一幅祖父母的肖像。"},
+      {type:"word",word:"pose",ipa:"/poʊz/",part:"名词 / 动词 noun / verb",meaning:"n. 姿势；姿态；v. 摆姿势；造成（问题或威胁）；提出（问题）",scene:"摄影姿势与表达问题",example:"The photographer asked us to pose by the window.",translation:"摄影师让我们在窗边摆姿势。"},
+      {type:"phrase",word:"get woken up",ipa:"/ɡet ˈwoʊkən ʌp/",part:"短语 verb pattern",meaning:"被叫醒；被吵醒（get + 过去分词，强调进入被唤醒的状态）",scene:"睡眠与日常作息",example:"I got woken up by the noise outside.",translation:"我被外面的噪音吵醒了。"},
+      {type:"phrase",word:"wear out",ipa:"/wer aʊt/",part:"短语 phrasal verb",meaning:"使筋疲力尽；用坏；磨损；穿破",scene:"描述疲劳或物品损耗",example:"Walking around the city all day really wore me out.",translation:"在城里走了一整天真的让我筋疲力尽。"},
+      {type:"phrase",word:"quite a bit of",ipa:"/kwaɪt ə bɪt əv/",part:"短语 quantifier phrase",meaning:"相当多的；不少的（后接不可数名词；do quite a bit of walking 表示走很多路）",scene:"表达数量与活动量",example:"We did quite a bit of walking during the trip.",translation:"旅行期间我们走了不少路。"},
+      {type:"phrase",word:"have a hard time doing something",ipa:"/hæv ə hɑːrd taɪm ˈduːɪŋ ˈsʌmθɪŋ/",part:"短语 verb pattern",meaning:"做某事有困难；做某事很吃力；不容易完成某事",scene:"描述困难与挑战",example:"I’m having a hard time focusing with all this noise.",translation:"这么吵，我很难集中注意力。"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -359,7 +365,9 @@
       "extra":["extras（名词复数：额外事项；临时演员）","extraordinary（形容词：非凡的；特别的）","extraneously（副词：附带地，较少用）"],
       "workweek":["workweeks（名词复数：工作周）","workweek-long（形容词：持续一周工作时间的）"],
       "sluggish":["sluggishly（副词：迟缓地）","sluggishness（名词：迟缓；无精打采）"],
-      "quarter":["quarterly（形容词／副词：季度的；按季度地）","quarters（名词复数：季度；住处；四分之一）"]
+      "quarter":["quarterly（形容词／副词：季度的；按季度地）","quarters（名词复数：季度；住处；四分之一）"],
+      "portrait":["portray（动词：描绘；刻画）","portraiture（名词：肖像画艺术）","portraitist（名词：肖像画家）"],
+      "pose":["posing（名词／动名词：摆姿势）","posed（形容词／过去分词：摆好姿势的）","poser（名词：难题；摆姿势的人）"]
       ,"refund":["refundable（形容词：可退款的）","refund（名词：退款）","refunded（形容词／过去分词：已退款的）"],
       "policy":["policies（名词复数：政策；规定）","policyholder（名词：保单持有人）","policymaker（名词：政策制定者）"],
       "disenchant":["disenchanted（形容词：不再抱有幻想的）","disenchantment（名词：失望；理想破灭）","enchant（动词：使着迷）"],
@@ -390,7 +398,13 @@
       "extra":["extra time（额外时间）","an extra charge（额外费用）","go the extra mile（付出额外努力）"],
       "workweek":["a five-day workweek（五天工作周）","a shorter workweek（更短的工作周）","during the workweek（工作周期间）"],
       "sluggish":["feel sluggish（感到无精打采）","sluggish performance（迟缓的表现）","a sluggish economy（低迷的经济）"],
-      "quarter":["next quarter（下个季度）","a quarter of an hour（一刻钟）","quarterly report（季度报告）"]
+      "quarter":["next quarter（下个季度）","a quarter of an hour（一刻钟）","quarterly report（季度报告）"],
+      "portrait":["a portrait of someone（某人的肖像）","portrait photography（人像摄影）","paint a portrait（画肖像）"],
+      "pose":["pose for a photo（摆姿势拍照）","strike a pose（摆个姿势）","pose a problem（造成问题）"],
+      "get woken up":["get woken up by noise（被噪音吵醒）","get woken up early（早早被叫醒）","wake someone up（叫醒某人）"],
+      "wear out":["wear yourself out（使自己筋疲力尽）","wear out a pair of shoes（穿坏一双鞋）","be worn out（筋疲力尽的；磨损的）"],
+      "quite a bit of":["quite a bit of walking（走很多路）","quite a bit of time（不少时间）","quite a bit of work（不少工作）"],
+      "have a hard time doing something":["have a hard time sleeping（很难入睡）","have a hard time understanding（很难理解）","have a hard time finding something（很难找到某物）"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[];item.forms=wordForms[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
