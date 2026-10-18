@@ -205,6 +205,11 @@
       {type:"phrase",word:"bend over",ipa:"/bend ˈoʊvər/",part:"短语 phrasal verb",meaning:"弯腰；俯身；弯下身子（有时也可指把身体向前弯）",scene:"描述身体动作",example:"Bend over carefully to pick up the box.",translation:"小心弯腰把箱子捡起来。"},
       {type:"phrase",word:"straighten up",ipa:"/ˈstreɪtən ʌp/",part:"短语 phrasal verb",meaning:"直起身；挺直；整理整齐；振作起来",scene:"描述姿势调整与整理",example:"Straighten up your back and take a deep breath.",translation:"挺直背部，深吸一口气。"},
       {type:"phrase",word:"pain relief patches",ipa:"/peɪn rɪˈliːf ˈpætʃɪz/",part:"短语 noun phrase",meaning:"止痛贴；疼痛缓解贴片（贴在皮肤上以缓解局部疼痛）",scene:"健康护理与疼痛缓解",example:"She used pain relief patches for her sore shoulders.",translation:"她用止痛贴缓解肩膀酸痛。"},
+      {type:"word",word:"shoot",ipa:"/ʃuːt/",part:"动词 / 名词 verb / noun",meaning:"v. 射击；拍摄；投篮；快速移动；n. 射击；拍摄；投篮；尝试",scene:"摄影、运动与动作表达",example:"Let’s shoot a few photos before the sun goes down.",translation:"太阳落山前我们拍几张照片吧。"},
+      {type:"word",word:"basics",ipa:"/ˈbeɪsɪks/",part:"名词复数 plural noun",meaning:"基础；基本知识；基本原则（basic 的复数形式，常用于 learn／know／cover the basics）",scene:"学习基础知识",example:"Before trying advanced techniques, make sure you understand the basics.",translation:"尝试高级技巧前，先确保你理解基础知识。"},
+      {type:"word",word:"rent",ipa:"/rent/",part:"名词 / 动词 noun / verb",meaning:"n. 租金；租赁；v. 租用；出租；租借",scene:"住房、设备与费用",example:"We rent a small apartment near the station.",translation:"我们在车站附近租了一套小公寓。"},
+      {type:"phrase",word:"turn out",ipa:"/tɝːn aʊt/",part:"短语 phrasal verb",meaning:"结果是；最终证明；出席、到场；关掉（灯或设备）",scene:"描述结果与最终情况",example:"The trip turned out better than we expected.",translation:"这次旅行的结果比我们预想的更好。"},
+      {type:"phrase",word:"paid off",ipa:"/peɪd ɔːf/",part:"短语 phrasal verb",meaning:"得到回报；成功奏效；还清（债务）。effort paid off 表示“努力得到了回报”。",scene:"描述努力的结果",example:"All our hard work finally paid off.",translation:"我们所有的努力终于得到了回报。"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -397,6 +402,9 @@
       "patch":["patched（形容词／过去分词：修补过的）","patching（名词／动名词：修补）","patchy（形容词：斑驳的；不稳定的）"],
       "landscape":["landscaping（名词／动名词：景观美化）","landscaped（形容词：经过景观美化的）","landscaper（名词：园林景观设计师）"],
       "theory":["theoretical（形容词：理论上的）","theoretically（副词：理论上）","theorize（动词：推测；建立理论）"],
+      "shoot":["shot（过去式／过去分词：射击；拍摄）","shooting（动名词：射击；拍摄）","shooter（名词：射手；摄影者）"],
+      "basics":["basic（形容词：基本的；基础的）","basically（副词：基本上）","basicity（名词：碱性，较少用）"],
+      "rent":["rental（名词／形容词：租赁；租用的）","renter（名词：租户）","rentable（形容词：可出租的）"],
       "snap":["snapped（动词过去式：啪地折断；拍照）","snapping（动名词：拍照；突然发火）","snappy（形容词：利落的；尖刻的）"],
       "lens":["lenses（名词复数：镜头；透镜）","lens-based（形容词：基于镜头的）"],
       "flash":["flashed（动词过去式：闪光；快速展示）","flashing（形容词：闪烁的；快速的）","flashy（形容词：浮华的；惹眼的）"],
@@ -461,6 +469,11 @@
       ,"bend over":["bend over to pick something up（弯腰捡起某物）","bend over backwards（竭尽全力）","bend over the table（俯身在桌边）"]
       ,"straighten up":["straighten up your back（挺直背部）","straighten up the room（把房间整理整齐）","straighten up and listen（振作起来并听好）"]
       ,"pain relief patches":["apply pain relief patches（贴上止痛贴）","use a pain relief patch（使用止痛贴）","patches for back pain（用于背痛的贴片）"]
+      ,"shoot":["shoot a photo（拍照）","shoot hoops（投篮）","shoot a scene（拍摄一个场景）"]
+      ,"basics":["learn the basics（学习基础）","know the basics（了解基本知识）","cover the basics（涵盖基础内容）"]
+      ,"rent":["pay the rent（付房租）","rent an apartment（租公寓）","rent something out（把某物出租）"]
+      ,"turn out":["turn out well（结果很好）","turn out to be（结果是；证明是）","turn out the lights（关灯）"]
+      ,"paid off":["hard work paid off（努力得到回报）","pay off a loan（还清贷款）","it paid off（这奏效了；值得）"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[];item.forms=wordForms[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
