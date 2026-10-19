@@ -210,6 +210,12 @@
       {type:"word",word:"rent",ipa:"/rent/",part:"名词 / 动词 noun / verb",meaning:"n. 租金；租赁；v. 租用；出租；租借",scene:"住房、设备与费用",example:"We rent a small apartment near the station.",translation:"我们在车站附近租了一套小公寓。"},
       {type:"phrase",word:"turn out",ipa:"/tɝːn aʊt/",part:"短语 phrasal verb",meaning:"结果是；最终证明；出席、到场；关掉（灯或设备）",scene:"描述结果与最终情况",example:"The trip turned out better than we expected.",translation:"这次旅行的结果比我们预想的更好。"},
       {type:"phrase",word:"paid off",ipa:"/peɪd ɔːf/",part:"短语 phrasal verb",meaning:"得到回报；成功奏效；还清（债务）。effort paid off 表示“努力得到了回报”。",scene:"描述努力的结果",example:"All our hard work finally paid off.",translation:"我们所有的努力终于得到了回报。"},
+      {type:"word",word:"rub",ipa:"/rʌb/",part:"动词 / 名词 verb / noun",meaning:"v. 摩擦；揉搓；擦拭；涂抹；n. 摩擦；难题；障碍",scene:"描述触碰、按摩与困难",example:"Rub the sore muscle gently with your fingers.",translation:"用手指轻轻揉揉酸痛的肌肉。"},
+      {type:"word",word:"liquor",ipa:"/ˈlɪkər/",part:"名词 noun",meaning:"烈酒；酒精饮料（通常指蒸馏酒）；酒液（正式或特定语境）",scene:"饮品与传统药酒",example:"The shop sells a range of local liquor.",translation:"这家店出售各种当地烈酒。"},
+      {type:"phrase",word:"push oneself",ipa:"/pʊʃ wʌnˈself/",part:"短语 verb phrase",meaning:"逼自己努力；挑战自己的极限；督促自己进步",scene:"努力、训练与自我提升",example:"You have to push yourself if you want to improve.",translation:"如果你想进步，就必须逼自己努力。"},
+      {type:"phrase",word:"medicated liquor",ipa:"/ˈmedɪkeɪtɪd ˈlɪkər/",part:"短语 noun phrase",meaning:"药酒；浸泡或调配了药材、用于保健或传统疗法的酒",scene:"传统保健与药材饮品",example:"He brought back a bottle of medicated liquor from his hometown.",translation:"他从家乡带回了一瓶药酒。"},
+      {type:"phrase",word:"be in good shape",ipa:"/biː ɪn ɡʊd ʃeɪp/",part:"短语 adjective phrase",meaning:"身体状况良好；状态很好；情况良好",scene:"健康、体能与整体状态",example:"She’s in good shape after months of regular training.",translation:"经过几个月的规律训练，她的身体状态很好。"},
+      {type:"phrase",word:"shooting touch",ipa:"/ˈʃuːtɪŋ tʌtʃ/",part:"短语 noun phrase",meaning:"投篮手感；投篮时稳定、柔和而准确的感觉（主要用于篮球）",scene:"篮球与运动表现",example:"He found his shooting touch in the second half.",translation:"他在下半场找回了投篮手感。"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -405,6 +411,8 @@
       "shoot":["shot（过去式／过去分词：射击；拍摄）","shooting（动名词：射击；拍摄）","shooter（名词：射手；摄影者）"],
       "basics":["basic（形容词：基本的；基础的）","basically（副词：基本上）","basicity（名词：碱性，较少用）"],
       "rent":["rental（名词／形容词：租赁；租用的）","renter（名词：租户）","rentable（形容词：可出租的）"],
+      "rub":["rubbed（动词过去式／过去分词：摩擦；揉搓）","rubbing（动名词：摩擦；擦拭）","rubber（名词：橡胶；橡皮）"],
+      "liquor":["liquors（名词复数：烈酒）","liquorish（形容词：像酒的，较少用）"],
       "snap":["snapped（动词过去式：啪地折断；拍照）","snapping（动名词：拍照；突然发火）","snappy（形容词：利落的；尖刻的）"],
       "lens":["lenses（名词复数：镜头；透镜）","lens-based（形容词：基于镜头的）"],
       "flash":["flashed（动词过去式：闪光；快速展示）","flashing（形容词：闪烁的；快速的）","flashy（形容词：浮华的；惹眼的）"],
@@ -474,6 +482,12 @@
       ,"rent":["pay the rent（付房租）","rent an apartment（租公寓）","rent something out（把某物出租）"]
       ,"turn out":["turn out well（结果很好）","turn out to be（结果是；证明是）","turn out the lights（关灯）"]
       ,"paid off":["hard work paid off（努力得到回报）","pay off a loan（还清贷款）","it paid off（这奏效了；值得）"]
+      ,"rub":["rub your eyes（揉眼睛）","rub something in（反复提及令人难受的事）","rub against（与……摩擦）"]
+      ,"liquor":["hard liquor（烈酒）","medicated liquor（药酒）","a liquor store（酒类商店）"]
+      ,"push oneself":["push yourself harder（更努力地逼自己）","push oneself to the limit（把自己逼到极限）","push yourself out of your comfort zone（走出舒适区）"]
+      ,"medicated liquor":["a bottle of medicated liquor（一瓶药酒）","traditional medicated liquor（传统药酒）","make medicated liquor（制作药酒）"]
+      ,"be in good shape":["get in good shape（变得健康）","stay in good shape（保持良好状态）","be in great shape（状态非常好）"]
+      ,"shooting touch":["find your shooting touch（找回投篮手感）","lose your shooting touch（失去投篮手感）","a soft shooting touch（柔和的投篮手感）"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[];item.forms=wordForms[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
