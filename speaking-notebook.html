@@ -229,6 +229,11 @@
       {type:"phrase",word:"company-sponsored",ipa:"/ˈkʌmpəni ˈspɑːnsərd/",part:"短语 compound adjective",meaning:"公司赞助的；由公司出资或支持的",scene:"公司福利与活动",example:"I joined a company-sponsored trip to the mountains.",translation:"我参加了一次公司赞助的山区旅行。"},
       {type:"phrase",word:"try out",ipa:"/traɪ aʊt/",part:"短语 phrasal verb",meaning:"试用；试穿；试演；参加选拔（以确定是否适合或能否入选）",scene:"尝试与选拔",example:"She’s trying out for the school basketball team.",translation:"她正在参加学校篮球队的选拔。"},
       {type:"phrase",word:"go on a trip",ipa:"/ɡoʊ ɑːn ə trɪp/",part:"短语 verb phrase",meaning:"去旅行；进行一次旅行",scene:"旅行与休闲安排",example:"We’re going on a trip to Japan this summer.",translation:"我们今年夏天要去日本旅行。"},
+      {type:"word",word:"blur",ipa:"/blɝː/",part:"名词 / 动词 noun / verb",meaning:"n. 模糊；模糊的东西；v. 使模糊；变模糊；（记忆或界限）变得不清晰",scene:"摄影与视觉效果",example:"The photographer used a slow shutter speed to blur the background.",translation:"摄影师用较慢的快门速度让背景变得模糊。"},
+      {type:"word",word:"full-body",ipa:"/ˌfʊl ˈbɑːdi/",part:"形容词 adjective",meaning:"全身的；拍摄或展示从头到脚的（full-body photo 表示“全身照”）",scene:"摄影与人物构图",example:"Could you take a full-body photo of me by the doorway?",translation:"你能在门口帮我拍一张全身照吗？"},
+      {type:"phrase",word:"background blur",ipa:"/ˈbækɡraʊnd blɝː/",part:"短语 noun phrase",meaning:"背景虚化；通过景深或后期处理让主体清晰、背景变模糊的摄影效果",scene:"摄影与构图",example:"This lens creates a beautiful background blur for portraits.",translation:"这支镜头能为人像拍出漂亮的背景虚化效果。"},
+      {type:"phrase",word:"work on",ipa:"/wɝːk ɑːn/",part:"短语 phrasal verb",meaning:"从事；致力于；改进；继续处理某事",scene:"工作与技能提升",example:"I’m working on a new photo project this week.",translation:"这周我正在做一个新的摄影项目。"},
+      {type:"phrase",word:"take shots",ipa:"/teɪk ʃɑːts/",part:"短语 verb phrase",meaning:"拍照；拍摄照片或镜头（也可根据语境指投篮或射击）",scene:"摄影与拍摄",example:"We went outside to take shots in the afternoon light.",translation:"我们到户外利用下午的光线拍照。"},
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
@@ -454,6 +459,8 @@
       "sponsor":["sponsorship（名词：赞助）","sponsored（形容词：受赞助的）","sponsoring（动名词：赞助）"],
       "wellness":["well（形容词／副词：健康的；好地）","well-being（名词：福祉；身心健康）","wellness-focused（形容词：注重健康的）"],
       "ideal":["ideally（副词：理想地；最好）","idealize（动词：理想化）","idealistic（形容词：理想主义的）"],
+      "blur":["blurry（形容词：模糊的）","blurred（形容词／过去分词：模糊的）","blurring（动名词：使变模糊）"],
+      "full-body":["full-body（形容词：全身的）","full-bodied（形容词：醇厚的；丰满的，含义不同）"],
       "come over":["come over to my place（到我家来）","come over for dinner（过来吃晚饭）","come over and + 动词（过来做某事）"],
       "scent":["the scent of flowers（花香）","a fresh scent（清新的气味）","scent something out（凭气味察觉某物）"],
       "osmanthus":["osmanthus tea（桂花茶）","sweet osmanthus（桂花）","the scent of osmanthus（桂花香）"],
@@ -518,6 +525,11 @@
       ,"company-sponsored":["a company-sponsored trip（公司赞助的旅行）","company-sponsored training（公司出资的培训）","a company-sponsored event（公司赞助的活动）"]
       ,"try out":["try out for a team（参加球队选拔）","try something out（试用某物）","try out a new recipe（试做新食谱）"]
       ,"go on a trip":["go on a business trip（出差）","go on a road trip（公路旅行）","go on a day trip（进行一日游）"]
+      ,"blur":["blur the background（虚化背景）","motion blur（运动模糊）","a blur of movement（模糊的动作影像）"]
+      ,"full-body":["a full-body photo（全身照）","full-body portrait（全身人像）","full-body shot（全身镜头）"]
+      ,"background blur":["create background blur（制造背景虚化）","strong background blur（明显的背景虚化）","background blur effect（背景虚化效果）"]
+      ,"work on":["work on a project（做一个项目）","work on improving something（致力于改进某事）","work on your skills（提升你的技能）"]
+      ,"take shots":["take portrait shots（拍人像照片）","take a few shots（拍几张照片）","take shots of something（拍摄某物）"]
     };
     words.forEach(item=>{item.notes=learningNotes[item.word]||[];item.forms=wordForms[item.word]||[]});
     const grid=document.querySelector("#wordGrid"),count=document.querySelector("#wordCount"),search=document.querySelector("#searchInput"),toolbar=document.querySelector(".toolbar"),pagination=document.querySelector("#pagination");
