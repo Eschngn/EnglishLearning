@@ -37,6 +37,12 @@
   <script>
     // 新单词或词组追加到数组末尾，显示时会按添加顺序倒序排列，最新条目在最前面。
     const words = [
+      {type:"phrase",word:"time expressions: before last / after next",ipa:"/taɪm ɪkˈspreʃənz/",part:"短语 time expressions",meaning:"一组表示相对时间的常用表达：the Thursday before last 上上周四；the week before last 上上周；the night before last 前天晚上；the day before yesterday 前天；the week after next 下下周；the afternoon of the day after tomorrow 后天下午；Wednesday of the week after next 下下周三。",scene:"描述过去或未来的相对时间",example:"the Thursday before last: I had a meeting the Thursday before last.\nthe week before last: We moved the week before last.\nthe night before last: I slept badly the night before last.\nthe day before yesterday: I mailed the package the day before yesterday.\nthe week after next: We’re going on vacation the week after next.\nthe afternoon of the day after tomorrow: Let’s meet the afternoon of the day after tomorrow.\nWednesday of the week after next: The appointment is on Wednesday of the week after next.",translation:"上上周四：我上上周四开了一个会。\n上上周：我们上上周搬家了。\n前天晚上：我前天晚上睡得不好。\n前天：我前天寄出了包裹。\n下下周：我们下下周去度假。\n后天下午：我们后天下午见面吧。\n下下周三：预约在下下周三。"},
+      {type:"word",word:"opponent",ipa:"/əˈpoʊnənt/",part:"名词 noun",meaning:"对手；竞争者；（体育比赛中的）对方队员或队伍",scene:"体育比赛与竞争",example:"Our opponents played tough defense throughout the game.",translation:"整场比赛中，对手的防守都很强硬。"},
+      {type:"word",word:"physical",ipa:"/ˈfɪzɪkəl/",part:"形容词 adjective",meaning:"身体对抗强的；身体力量要求高的；身体上的；物理的（体育语境中常指比赛对抗激烈、身体接触多）",scene:"描述体育比赛的身体对抗",example:"Basketball can be a very physical game, especially under the basket.",translation:"篮球比赛的身体对抗可能很强，尤其是在篮下。"},
+      {type:"word",word:"rebound",ipa:"/ˈriːbaʊnd/",part:"名词 / 动词 noun / verb",meaning:"n. （篮球）篮板球；反弹；v. 抢到篮板球；弹回；恢复；反弹",scene:"篮球比赛与状态变化",example:"She grabbed the rebound and passed the ball to her teammate.",translation:"她抢下篮板球，把球传给了队友。"},
+      {type:"word",word:"fitness",ipa:"/ˈfɪtnəs/",part:"名词 noun",meaning:"健康；健身；身体素质；适合；胜任（某用途或职位）",scene:"谈论锻炼与身体状态",example:"I’m working on my fitness so I can keep up during the game.",translation:"我正在提升体能，这样比赛时才能跟上节奏。"},
+      {type:"word",word:"verification",ipa:"/ˌverɪfɪˈkeɪʃən/",part:"名词 noun",meaning:"核实；验证；证明；（身份、信息等的）确认",scene:"确认身份或信息",example:"You need to complete email verification before signing in.",translation:"登录前，你需要完成电子邮件验证。"},
       {type:"word",word:"quarterfinal",ipa:"/ˌkwɔːrtərˈfaɪnəl/",part:"名词 noun",meaning:"四分之一决赛；四分之一决赛阶段（比赛中决定四强席位的比赛）",scene:"体育比赛与赛事进程",example:"Our team reached the quarterfinals for the first time.",translation:"我们队第一次打进了四分之一决赛。"},
       {type:"word",word:"semifinal",ipa:"/ˌsemiˈfaɪnəl/",part:"名词 noun",meaning:"半决赛；半决赛阶段（决定决赛选手或队伍的比赛）",scene:"体育比赛与赛事进程",example:"The semifinal will be played on Saturday evening.",translation:"半决赛将在周六晚上举行。"},
       {type:"word",word:"accidentally",ipa:"/ˌæksɪˈdentəli/",part:"副词 adverb",meaning:"意外地；偶然地；不小心地（并非有意）",scene:"说明意外发生或无意行为",example:"I accidentally deleted the photo from my phone.",translation:"我不小心把那张照片从手机里删掉了。"},
@@ -87,7 +93,7 @@
       {type:"word",word:"phrase",ipa:"/freɪz/",part:"名词 noun",meaning:"短语；词组；成语；说法；（音乐或语言中的）短句；措辞；表达方式",scene:"语言表达与语法",example:"“Take your time” is a useful phrase when you want someone to relax.",translation:"当你想让别人放轻松时，“Take your time” 是一个很实用的说法。"},
       {type:"phrase",word:"keep track of",ipa:"/kiːp træk əv/",part:"短语 phrasal verb",meaning:"记录；掌握……的动态；持续了解；留意并跟踪",scene:"记录与管理信息",example:"I use an app to keep track of my new vocabulary.",translation:"我用一个应用来记录新学的词汇。"},
       {type:"phrase",word:"set up",ipa:"/set ʌp/",part:"短语 phrasal verb",meaning:"建立；设立；安装；设置；安排；准备好；陷害（具体含义取决于语境）",scene:"准备、安装与安排",example:"I need a few minutes to set up the equipment before the class starts.",translation:"上课前我需要几分钟把设备安装好。"},
-      {type:"phrase",word:"build up",ipa:"/bɪld ʌp/",part:"短语 phrasal verb",meaning:"逐步建立；积累；增强；增加；使逐渐形成；（压力、灰尘等）积聚",scene:"积累与逐步发展",example:"Small daily habits can build up your confidence over time.",translation:"每天的小习惯会逐渐增强你的自信。"},
+      {type:"phrase",word:"build up",ipa:"/bɪld ʌp/",part:"短语 phrasal verb",meaning:"逐步建立；积累；增强（体能、力量、自信等）；增加；使逐渐形成；（压力、灰尘等）积聚",scene:"逐步增强体能、力量或信心",example:"I’m doing strength training to build up my strength.",translation:"我正在做力量训练，以增强自己的力量。"},
       {type:"phrase",word:"replace...with...",ipa:"/rɪˈpleɪs ... wɪð .../",part:"短语 verb pattern",meaning:"用……替换……；把……换成……（replace A with B，A 是被替换的对象，B 是替换后的对象）",scene:"替换物品或做法",example:"Try to replace sugary drinks with water.",translation:"试着用水代替含糖饮料。"},
       {type:"phrase",word:"over time",ipa:"/ˈoʊvɚ taɪm/",part:"短语 adverbial phrase",meaning:"随着时间的推移；久而久之；经过一段时间",scene:"描述长期变化",example:"Your listening skills will improve over time if you practice regularly.",translation:"如果坚持练习，随着时间推移，你的听力会提高。"},
       {type:"phrase",word:"starting today",ipa:"/ˈstɑːrtɪŋ təˈdeɪ/",part:"短语 adverbial phrase",meaning:"从今天开始；今天起（表示从现在起采取新的行动或安排）",scene:"制定计划与做出改变",example:"Starting today, I’m going to review ten new words every morning.",translation:"从今天开始，我每天早上要复习十个新单词。"},
@@ -249,6 +255,7 @@
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
+      "time expressions: before last / after next":["the month before last（上上个月）／the month after next（下下个月）","the day after tomorrow（后天）；the morning / afternoon / evening of the day after tomorrow（后天早上／下午／晚上）","Monday of the week after next（下下周一）；同理可替换为其他星期几","before last 表示再往前一周；after next 表示再往后一周。为避免 next Wednesday 的理解差异，可说 Wednesday of the week after next"],
       "billiards":["play billiards（打台球）","a game of billiards（一局台球）","a billiards table（台球桌）"],
       "rusty":["get rusty（变得生疏／生锈）","be rusty at something（对某事生疏）","rusty metal（生锈的金属）"],
       "drizzling":["start drizzling（开始下毛毛雨）","still drizzling（仍在下毛毛雨）","drizzle lightly（下着小雨）"],
@@ -297,7 +304,7 @@
       "phrase":["a useful phrase（实用的短语）","a common phrase（常见说法）","phrase something carefully（谨慎措辞）"],
       "keep track of":["keep track of expenses（记录开支）","keep track of progress（跟踪进度）","lose track of time（忘记时间）"],
       "set up":["set up an account（开设账户）","set up a meeting（安排会议）","set something up（安装或设置某物）"],
-      "build up":["build up confidence（建立自信）","build up experience（积累经验）","build up to something（逐步发展到某事）"],
+      "build up":["build up my strength（增强我的力量）","build up your stamina（增强耐力）","build up confidence（建立自信）"],
       "replace...with...":["replace A with B（用 B 替换 A）","replace sugar with honey（用蜂蜜代替糖）","replace an old habit with a new one（用新习惯替代旧习惯）"],
       "over time":["change over time（随着时间改变）","improve over time（逐渐改善）","over a period of time（经过一段时间）"],
       "starting today":["starting today, ...（从今天开始……）","starting tomorrow（从明天开始）","effective today（从今天起生效，较正式）"],
@@ -373,6 +380,11 @@
       "pace":["at your own pace（按照自己的节奏）","keep pace with（跟上……的步调）","set the pace（带头；定下节奏）"],
       "intense":["intense pressure（巨大压力）","intense competition（激烈竞争）","intense training（高强度训练）"],
       "distract":["get distracted（分心）","distract someone from something（使某人无法专注于某事）","a distraction（令人分心的事物）"],
+      "opponent":["a strong opponent（强劲的对手）","face an opponent（面对对手）","opposing team（对方队伍）"],
+      "physical":["physical contact（身体接触）","a physical game（身体对抗激烈的比赛）","physical strength（身体力量）"],
+      "rebound":["grab / get a rebound（抢到篮板球）","offensive rebound（进攻篮板）","defensive rebound（防守篮板）"],
+      "fitness":["physical fitness（身体健康；体能）","improve your fitness（提升体能）","fitness training（体能训练）"],
+      "verification":["identity verification（身份验证）","email verification（电子邮件验证）","verification code（验证码）"],
       "quarterfinal":["reach the quarterfinals（进入四分之一决赛）","a quarterfinal match（四分之一决赛）","quarterfinal round（四分之一决赛阶段）"],
       "semifinal":["reach the semifinals（进入半决赛）","a semifinal match（半决赛）","semifinal round（半决赛阶段）"],
       "accidentally":["accidentally break something（不小心打坏某物）","do something accidentally（无意中做某事）","accidentally-on-purpose（故意装作无意地，非正式说法）"],
