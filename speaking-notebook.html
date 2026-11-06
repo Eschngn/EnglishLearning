@@ -37,6 +37,15 @@
   <script>
     // 新单词或词组追加到数组末尾，显示时会按添加顺序倒序排列，最新条目在最前面。
     const words = [
+      {type:"phrase",word:"sooner or later",ipa:"/ˌsuːnər ɔːr ˈleɪtər/",part:"短语 adverbial phrase",meaning:"迟早；早晚（表示某事最终会发生，具体时间不确定）",scene:"表达事情最终会发生",example:"If you keep practicing, sooner or later you’ll see real progress.",translation:"只要你坚持练习，迟早会看到明显的进步。"},
+      {type:"word",word:"sensitive",ipa:"/ˈsensətɪv/",part:"形容词 adjective",meaning:"敏感的；易受影响的；体贴的；（话题或信息）敏感的；过敏的",scene:"描述感受、性格或敏感话题",example:"She is sensitive to criticism, so choose your words carefully.",translation:"她对批评很敏感，所以说话时要注意措辞。"},
+      {type:"word",word:"conflict",ipa:"/ˈkɑːnflɪkt/ · /kənˈflɪkt/",part:"名词 / 动词 noun / verb",meaning:"n. 冲突；矛盾；争执；冲突状态；v. 冲突；抵触；发生争执（名词重音在前，动词重音在后）",scene:"描述意见分歧或相互抵触",example:"The two plans conflict with each other, so we need to choose one.",translation:"这两个计划相互冲突，所以我们需要选一个。"},
+      {type:"word",word:"complain",ipa:"/kəmˈpleɪn/",part:"动词 verb",meaning:"抱怨；投诉；发牢骚；诉说（疼痛或不适）",scene:"表达不满或提出问题",example:"He complained about the noise but did not report it to the manager.",translation:"他抱怨噪音，但没有向经理报告。"},
+      {type:"word",word:"eventually",ipa:"/ɪˈventʃuəli/",part:"副词 adverb",meaning:"最终；终于；结果（经过一段时间或一系列过程之后）",scene:"描述最终结果",example:"We eventually found a solution that worked for everyone.",translation:"我们最终找到了一个对所有人都可行的解决办法。"},
+      {type:"word",word:"separately",ipa:"/ˈsepərətli/",part:"副词 adverb",meaning:"分别地；单独地；分开地；另行地",scene:"说明分开处理或分别进行",example:"The two items are sold separately, so they have different prices.",translation:"这两件商品分开出售，所以价格不同。"},
+      {type:"word",word:"involved",ipa:"/ɪnˈvɑːlvd/",part:"形容词 adjective",meaning:"参与的；涉及的；卷入的；复杂的（常用于 be involved in，表示参与或涉及某事）",scene:"描述参与活动或涉及某事",example:"She is deeply involved in a community project.",translation:"她深度参与了一个社区项目。"},
+      {type:"phrase",word:"tend to do",ipa:"/tend tə duː/",part:"短语 verb pattern",meaning:"往往会做……；倾向于做……（表示通常的行为或倾向）",scene:"描述习惯与一般倾向",example:"I tend to check my work twice before I submit it.",translation:"我通常会在提交前检查两遍自己的工作。"},
+      {type:"phrase",word:"be bound to do",ipa:"/bi baʊnd tə duː/",part:"短语 adjective phrase",meaning:"一定会做……；肯定会发生……（表示很有把握的推断或必然结果）",scene:"表达必然性与高度确定性",example:"If you keep practicing, you’re bound to improve.",translation:"如果你坚持练习，就一定会进步。"},
       {type:"phrase",word:"time expressions: before last / after next",ipa:"/taɪm ɪkˈspreʃənz/",part:"短语 time expressions",meaning:"一组表示相对时间的常用表达：the Thursday before last 上上周四；the week before last 上上周；the night before last 前天晚上；the day before yesterday 前天；the week after next 下下周；the afternoon of the day after tomorrow 后天下午；Wednesday of the week after next 下下周三。",scene:"描述过去或未来的相对时间",example:"the Thursday before last: I had a meeting the Thursday before last.\nthe week before last: We moved the week before last.\nthe night before last: I slept badly the night before last.\nthe day before yesterday: I mailed the package the day before yesterday.\nthe week after next: We’re going on vacation the week after next.\nthe afternoon of the day after tomorrow: Let’s meet the afternoon of the day after tomorrow.\nWednesday of the week after next: The appointment is on Wednesday of the week after next.",translation:"上上周四：我上上周四开了一个会。\n上上周：我们上上周搬家了。\n前天晚上：我前天晚上睡得不好。\n前天：我前天寄出了包裹。\n下下周：我们下下周去度假。\n后天下午：我们后天下午见面吧。\n下下周三：预约在下下周三。"},
       {type:"word",word:"opponent",ipa:"/əˈpoʊnənt/",part:"名词 noun",meaning:"对手；竞争者；（体育比赛中的）对方队员或队伍",scene:"体育比赛与竞争",example:"Our opponents played tough defense throughout the game.",translation:"整场比赛中，对手的防守都很强硬。"},
       {type:"word",word:"physical",ipa:"/ˈfɪzɪkəl/",part:"形容词 adjective",meaning:"身体对抗强的；身体力量要求高的；身体上的；物理的（体育语境中常指比赛对抗激烈、身体接触多）",scene:"描述体育比赛的身体对抗",example:"Basketball can be a very physical game, especially under the basket.",translation:"篮球比赛的身体对抗可能很强，尤其是在篮下。"},
@@ -255,6 +264,15 @@
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
+      "sooner or later":["sooner or later, ...（迟早……；常放在句首或句中）","It’s only a matter of time before...（……只是时间问题）","eventually（最终；较中性，不像 sooner or later 那样强调迟早会发生）"],
+      "sensitive":["be sensitive to criticism（对批评敏感）","sensitive information（敏感信息）","sensitive skin（敏感肌肤）"],
+      "conflict":["a conflict between A and B（A 与 B 之间的冲突）","conflict with something（与某事冲突）","resolve a conflict（解决冲突）"],
+      "complain":["complain about something（抱怨某事）","complain to someone（向某人投诉）","complain that + 从句（抱怨……）"],
+      "eventually":["eventually become（最终成为）","eventually find a solution（最终找到解决办法）","eventually lead to（最终导致）"],
+      "separately":["be packed separately（分开包装）","pay separately（分别付款）","deal with something separately（单独处理某事）"],
+      "involved":["be involved in a project（参与一个项目）","get involved in something（参与某事）","be heavily / deeply involved in（深度参与／深受牵涉）"],
+      "tend to do":["tend to forget（往往会忘记）","tend to be + 形容词（往往处于某种状态）","people tend to do...（人们往往会……）"],
+      "be bound to do":["be bound to happen（一定会发生）","be bound to succeed（一定会成功）","you’re bound to notice（你一定会注意到）"],
       "time expressions: before last / after next":["the month before last（上上个月）／the month after next（下下个月）","the day after tomorrow（后天）；the morning / afternoon / evening of the day after tomorrow（后天早上／下午／晚上）","Monday of the week after next（下下周一）；同理可替换为其他星期几","before last 表示再往前一周；after next 表示再往后一周。为避免 next Wednesday 的理解差异，可说 Wednesday of the week after next"],
       "billiards":["play billiards（打台球）","a game of billiards（一局台球）","a billiards table（台球桌）"],
       "rusty":["get rusty（变得生疏／生锈）","be rusty at something（对某事生疏）","rusty metal（生锈的金属）"],
