@@ -37,6 +37,12 @@
   <script>
     // 数组按添加时间倒序排列（最新的在最前面），显示时直接按数组顺序展示。
     const words = [
+      {type:"word",word:"digit",ipa:"/ˈdɪdʒɪt/",part:"名词 noun",meaning:"数字；（0 到 9 的）数位；手指；脚趾",scene:"谈论数字与数值",example:"The answer is usually given in single digits.",translation:"答案通常以个位数给出。"},
+      {type:"word",word:"anxious",ipa:"/ˈæŋkʃəs/",part:"形容词 adjective",meaning:"焦虑的；担心的；渴望的（常用 anxious about 表示担心某事，anxious to do 表示急于做某事）",scene:"表达担忧或期待",example:"I felt anxious about the interview, but it went well.",translation:"我对那场面试感到紧张，不过面试很顺利。"},
+      {type:"word",word:"attract",ipa:"/əˈtrækt/",part:"动词 verb",meaning:"吸引；引起（注意、兴趣等）；招引",scene:"描述吸引注意或兴趣",example:"The bright display attracts a lot of attention.",translation:"醒目的展示吸引了很多关注。"},
+      {type:"word",word:"single",ipa:"/ˈsɪŋɡəl/",part:"形容词 / 名词 adjective / noun",meaning:"单一的；单个的；未婚的；单曲；单打比赛",scene:"描述单个事物或状态",example:"She checked every single detail before sending the report.",translation:"发送报告前，她检查了每一个细节。"},
+      {type:"phrase",word:"doubt myself",ipa:"/daʊt maɪˈself/",part:"短语 verb phrase",meaning:"怀疑自己；对自己的能力或判断缺乏信心",scene:"表达自我怀疑",example:"When things get difficult, I sometimes doubt myself.",translation:"事情变得困难时，我有时会怀疑自己。"},
+      {type:"phrase",word:"put myself down",ipa:"/pʊt maɪˈself daʊn/",part:"短语 phrasal verb",meaning:"贬低自己；说自己的坏话",scene:"描述自我否定的言语",example:"I’m trying not to put myself down when I make a mistake.",translation:"犯错时，我正努力不再贬低自己。"},
       {type:"phrase",word:"sooner or later",ipa:"/ˌsuːnər ɔːr ˈleɪtər/",part:"短语 adverbial phrase",meaning:"迟早；早晚（表示某事最终会发生，具体时间不确定）",scene:"表达事情最终会发生",example:"If you keep practicing, sooner or later you’ll see real progress.",translation:"只要你坚持练习，迟早会看到明显的进步。"},
       {type:"word",word:"sensitive",ipa:"/ˈsensətɪv/",part:"形容词 adjective",meaning:"敏感的；易受影响的；体贴的；（话题或信息）敏感的；过敏的",scene:"描述感受、性格或敏感话题",example:"She is sensitive to criticism, so choose your words carefully.",translation:"她对批评很敏感，所以说话时要注意措辞。"},
       {type:"word",word:"conflict",ipa:"/ˈkɑːnflɪkt/ · /kənˈflɪkt/",part:"名词 / 动词 noun / verb",meaning:"n. 冲突；矛盾；争执；冲突状态；v. 冲突；抵触；发生争执（名词重音在前，动词重音在后）",scene:"描述意见分歧或相互抵触",example:"The two plans conflict with each other, so we need to choose one.",translation:"这两个计划相互冲突，所以我们需要选一个。"},
@@ -264,6 +270,12 @@
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
+      "digit":["single digits（个位数；0 到 9 的数字）","double digits（两位数）","a six-digit number（六位数）"],
+      "anxious":["be anxious about something（为某事担心）","be anxious to do something（急于做某事）","anxious for news（急切地想知道消息）"],
+      "attract":["attract attention（吸引注意）","attract interest（引起兴趣）","be attracted to someone / something（被某人／某物吸引）"],
+      "single":["every single day（每一天；强调每一个）","a single room（单人间）","single out someone / something（单独挑出；特别指出）"],
+      "doubt myself":["doubt yourself（怀疑自己）","have doubts about something（对某事有疑虑）","There’s no doubt that...（毫无疑问……）"],
+      "put myself down":["put yourself down（贬低自己）","stop putting yourself down（别再贬低自己）","put someone down（贬低某人；也可指放下某物，依语境判断）"],
       "sooner or later":["sooner or later, ...（迟早……；常放在句首或句中）","It’s only a matter of time before...（……只是时间问题）","eventually（最终；较中性，不像 sooner or later 那样强调迟早会发生）"],
       "sensitive":["be sensitive to criticism（对批评敏感）","sensitive information（敏感信息）","sensitive skin（敏感肌肤）"],
       "conflict":["a conflict between A and B（A 与 B 之间的冲突）","conflict with something（与某事冲突）","resolve a conflict（解决冲突）"],
