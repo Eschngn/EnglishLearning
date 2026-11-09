@@ -37,6 +37,15 @@
   <script>
     // 数组按添加时间倒序排列（最新的在最前面），显示时直接按数组顺序展示。
     const words = [
+      {type:"word",word:"slide",ipa:"/slaɪd/",part:"动词 / 名词 verb / noun",meaning:"v. 滑动；滑行；悄悄移动；（情况）逐渐变差；n. 滑动；幻灯片；滑梯",scene:"描述滑动、移动或演示文稿",example:"She slid the photo across the table and showed me the next slide.",translation:"她把照片滑过桌面递给我，然后给我看了下一张幻灯片。"},
+      {type:"word",word:"hoody",ipa:"/ˈhʊdi/",part:"名词 noun",meaning:"连帽衫；带帽卫衣（也常拼作 hoodie，hoodie 是更常见的拼法）",scene:"描述衣物",example:"He wore a warm hoody on the chilly walk home.",translation:"他穿着一件暖和的连帽衫走回家。"},
+      {type:"word",word:"thicker",ipa:"/ˈθɪkər/",part:"形容词 adjective",meaning:"更厚的；更浓稠的；更密集的（thick 的比较级）",scene:"比较厚度、质地或密度",example:"This jacket is thicker than the one I wore yesterday.",translation:"这件夹克比我昨天穿的那件更厚。"},
+      {type:"word",word:"slipper",ipa:"/ˈslɪpər/",part:"名词 noun",meaning:"拖鞋；室内便鞋（通常指在家穿的软底鞋）",scene:"谈论鞋类与居家穿着",example:"I put on my slippers as soon as I got home.",translation:"我一到家就穿上了拖鞋。"},
+      {type:"word",word:"fuzzy",ipa:"/ˈfʌzi/",part:"形容词 adjective",meaning:"毛茸茸的；有绒毛的；模糊不清的；不清晰的",scene:"描述质地、图像或记忆",example:"The fuzzy blanket feels soft and warm.",translation:"这条毛茸茸的毯子摸起来柔软又暖和。"},
+      {type:"word",word:"murder",ipa:"/ˈmɝːdər/",part:"名词 / 动词 noun / verb",meaning:"谋杀；凶杀案；谋杀（某人）",scene:"描述刑事案件",example:"The detective is investigating the murder.",translation:"侦探正在调查这起谋杀案。"},
+      {type:"word",word:"apparently",ipa:"/əˈpærəntli/",part:"副词 adverb",meaning:"看来；据说；显然（表示根据现有信息作出的判断，也可表示消息来源并非亲见）",scene:"转述信息或表达推断",example:"Apparently, the meeting has been moved to Friday.",translation:"据说，会议已经改到星期五了。"},
+      {type:"phrase",word:"all of a sudden",ipa:"/ˌɔːl əv ə ˈsʌdən/",part:"短语 adverbial phrase",meaning:"突然；冷不防（强调事情发生得出乎意料）",scene:"描述突发事件",example:"All of a sudden, the lights went out.",translation:"突然，灯全灭了。"},
+      {type:"phrase",word:"commit the crime",ipa:"/kəˈmɪt ðə kraɪm/",part:"短语 verb phrase",meaning:"实施犯罪；犯下罪行（commit a crime 泛指犯罪；the crime 指前文提到的特定罪行）",scene:"谈论犯罪行为与案件",example:"The evidence showed that he had committed the crime.",translation:"证据表明他犯下了这项罪行。"},
       {type:"word",word:"digit",ipa:"/ˈdɪdʒɪt/",part:"名词 noun",meaning:"数字；（0 到 9 的）数位；手指；脚趾",scene:"谈论数字与数值",example:"The answer is usually given in single digits.",translation:"答案通常以个位数给出。"},
       {type:"word",word:"anxious",ipa:"/ˈæŋkʃəs/",part:"形容词 adjective",meaning:"焦虑的；担心的；渴望的（常用 anxious about 表示担心某事，anxious to do 表示急于做某事）",scene:"表达担忧或期待",example:"I felt anxious about the interview, but it went well.",translation:"我对那场面试感到紧张，不过面试很顺利。"},
       {type:"word",word:"attract",ipa:"/əˈtrækt/",part:"动词 verb",meaning:"吸引；引起（注意、兴趣等）；招引",scene:"描述吸引注意或兴趣",example:"The bright display attracts a lot of attention.",translation:"醒目的展示吸引了很多关注。"},
@@ -270,6 +279,15 @@
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
+      "slide":["slide down / across / into（向下／横向／悄悄滑动）","slide into someone’s DMs（私信某人，口语表达）","a presentation slide（演示文稿中的一张幻灯片）"],
+      "hoody":["wear a hoody（穿连帽衫）","a hooded sweatshirt（连帽卫衣，较正式的说法）","hoodie 是更常见的拼写"],
+      "thicker":["thicker than...（比……更厚）","a thicker coat（更厚的外套）","make the sauce thicker（把酱汁调得更浓稠）"],
+      "slipper":["a pair of slippers（一双拖鞋）","house slippers（家居拖鞋）","slip into your slippers（迅速穿上拖鞋）"],
+      "fuzzy":["a fuzzy sweater（毛茸茸的毛衣）","a fuzzy picture（模糊的图片）","a fuzzy memory（模糊的记忆）"],
+      "murder":["commit murder（犯谋杀罪）","a murder investigation（谋杀案调查）","be charged with murder（被控谋杀）"],
+      "apparently":["Apparently, ...（看来／据说……）","apparently not（看来不是；据说并非如此）","seemingly（表面上看来；似乎）"],
+      "all of a sudden":["all of a sudden, ...（突然……）","suddenly（突然地）","out of nowhere（突然出现；出乎意料地）"],
+      "commit the crime":["commit a crime（犯罪；泛指犯下一项罪行）","be accused of a crime（被指控犯罪）","be guilty of a crime（犯有某罪）"],
       "digit":["single digits（个位数；0 到 9 的数字）","double digits（两位数）","a six-digit number（六位数）"],
       "anxious":["be anxious about something（为某事担心）","be anxious to do something（急于做某事）","anxious for news（急切地想知道消息）"],
       "attract":["attract attention（吸引注意）","attract interest（引起兴趣）","be attracted to someone / something（被某人／某物吸引）"],
