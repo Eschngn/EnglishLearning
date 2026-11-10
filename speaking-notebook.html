@@ -37,6 +37,11 @@
   <script>
     // 数组按添加时间倒序排列（最新的在最前面），显示时直接按数组顺序展示。
     const words = [
+      {type:"phrase",word:"pretty much",ipa:"/ˈprɪti mʌtʃ/",part:"短语 adverbial phrase",meaning:"几乎；差不多；基本上（常用于口语，表示程度很接近或大体如此）",scene:"表达近似程度或概括情况",example:"I’ve pretty much finished packing.",translation:"我差不多已经收拾完行李了。"},
+      {type:"phrase",word:"for over a year now",ipa:"/fər ˈoʊvər ə jɪr naʊ/",part:"短语 time expression",meaning:"到现在已经超过一年；常与现在完成时连用，表示从过去持续到现在",scene:"描述持续至今的时间",example:"I’ve been learning English for over a year now.",translation:"到现在我学英语已经一年多了。"},
+      {type:"phrase",word:"have / keep / get + noun + to oneself",ipa:"/tə wʌnˈself/",part:"句型 pattern",meaning:"have something to oneself：独自享有某物或拥有自己的时间；keep something to oneself：把某事留在心里、不告诉别人；get something to oneself：获得独自使用某物的机会。反身代词随主语变化（myself / yourself / himself 等）。",scene:"表达独自享有或保守某事",example:"I finally have some time to myself, so I can relax.",translation:"我终于有了属于自己的时间，可以放松一下。"},
+      {type:"phrase",word:"by oneself",ipa:"/baɪ wʌnˈself/",part:"短语 adverbial phrase",meaning:"独自；独力（可强调没有他人陪伴，也可强调没有他人帮助；反身代词随主语变化）",scene:"说明独自行动或独立完成",example:"She learned to play the song by herself.",translation:"她靠自己学会了弹这首歌。"},
+      {type:"phrase",word:"work out",ipa:"/wɝːk aʊt/",part:"短语 phrasal verb",meaning:"锻炼；解决；计算出；（计划或结果）顺利发展；具体含义依语境而定",scene:"描述锻炼、解决问题或结果",example:"We worked out a solution together, and everything worked out well.",translation:"我们一起想出了解决办法，最后一切都很顺利。"},
       {type:"word",word:"slide",ipa:"/slaɪd/",part:"动词 / 名词 verb / noun",meaning:"v. 滑动；滑行；悄悄移动；（情况）逐渐变差；n. 滑动；幻灯片；滑梯",scene:"描述滑动、移动或演示文稿",example:"She slid the photo across the table and showed me the next slide.",translation:"她把照片滑过桌面递给我，然后给我看了下一张幻灯片。"},
       {type:"word",word:"hoody",ipa:"/ˈhʊdi/",part:"名词 noun",meaning:"连帽衫；带帽卫衣（也常拼作 hoodie，hoodie 是更常见的拼法）",scene:"描述衣物",example:"He wore a warm hoody on the chilly walk home.",translation:"他穿着一件暖和的连帽衫走回家。"},
       {type:"word",word:"thicker",ipa:"/ˈθɪkər/",part:"形容词 adjective",meaning:"更厚的；更浓稠的；更密集的（thick 的比较级）",scene:"比较厚度、质地或密度",example:"This jacket is thicker than the one I wore yesterday.",translation:"这件夹克比我昨天穿的那件更厚。"},
@@ -279,6 +284,11 @@
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
+      "pretty much":["pretty much the same（几乎一样）","pretty much everyone（几乎所有人）","That’s pretty much it（大致就是这样）"],
+      "for over a year now":["I’ve lived here for over a year now（我到现在住在这里一年多了）","for + 时间段：表示持续多久","常与现在完成时或现在完成进行时连用"],
+      "have / keep / get + noun + to oneself":["have time to oneself（有属于自己的时间）","keep a secret to oneself（把秘密留在心里）","The whole room to myself（整个房间都由我独自使用）"],
+      "by oneself":["do something by yourself（独自／独力做某事）","live by oneself（独自居住）","all by myself（完全靠自己／独自一人，语气更强调）"],
+      "work out":["work out at the gym（在健身房锻炼）","work out a problem（解决问题）","Things worked out well（事情进展顺利）"],
       "slide":["slide down / across / into（向下／横向／悄悄滑动）","slide into someone’s DMs（私信某人，口语表达）","a presentation slide（演示文稿中的一张幻灯片）"],
       "hoody":["wear a hoody（穿连帽衫）","a hooded sweatshirt（连帽卫衣，较正式的说法）","hoodie 是更常见的拼写"],
       "thicker":["thicker than...（比……更厚）","a thicker coat（更厚的外套）","make the sauce thicker（把酱汁调得更浓稠）"],
