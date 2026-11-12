@@ -37,6 +37,13 @@
   <script>
     // 数组按添加时间倒序排列（最新的在最前面），显示时直接按数组顺序展示。
     const words = [
+      {type:"word",word:"present",ipa:"/ˈprezənt/ · /prɪˈzent/",part:"名词 / 形容词 / 动词 noun / adjective / verb",meaning:"n. 礼物；adj. 目前的；出席的；v. 呈现；介绍；颁发（名词和形容词重音在前，动词重音在后）",scene:"谈论当前状态、礼物或介绍内容",example:"Everyone present received a small present, and Maya presented the award.",translation:"所有在场的人都收到了一份小礼物，Maya 颁发了奖项。"},
+      {type:"word",word:"supervisor",ipa:"/ˈsuːpərvaɪzər/",part:"名词 noun",meaning:"主管；监督者；指导人（负责监督工作、项目或员工的人）",scene:"谈论工作职责与管理关系",example:"My supervisor helped me set clear goals for the project.",translation:"我的主管帮我为这个项目设定了明确目标。"},
+      {type:"word",word:"mentor",ipa:"/ˈmentɔːr/",part:"名词 / 动词 noun / verb",meaning:"n. 导师；指导者；v. 指导（通常指凭借经验帮助他人成长）",scene:"谈论指导与职业发展",example:"She found a mentor who guided her through her first year at work.",translation:"她找到了一位导师，指导她度过了工作的第一年。"},
+      {type:"word",word:"approach",ipa:"/əˈproʊtʃ/",part:"名词 / 动词 noun / verb",meaning:"n. 方法；方式；接近；v. 接近；着手处理；与……接洽（名词和动词重音均在后）",scene:"讨论解决问题的方法或接近某人／某事",example:"We took a different approach to the problem and approached the client together.",translation:"我们用不同的方法处理这个问题，并一起与客户接洽。"},
+      {type:"word",word:"win-win",ipa:"/ˌwɪn ˈwɪn/",part:"形容词 adjective",meaning:"双赢的；对各方都有利的（常作定语，如 a win-win situation）",scene:"描述互利的结果或安排",example:"Compromising on the schedule was a win-win solution for both teams.",translation:"在时间安排上达成妥协，对两个团队来说都是双赢的解决方案。"},
+      {type:"phrase",word:"I'll be all set",ipa:"/aɪl bi ɔːl set/",part:"短语 expression",meaning:"我就都准备好了；到时我就没问题了（all set 表示准备就绪或所需事项已安排妥当）",scene:"表示准备完成或安排妥当",example:"Give me five more minutes, and I’ll be all set.",translation:"再给我五分钟，我就都准备好了。"},
+      {type:"phrase",word:"weak points",ipa:"/wiːk pɔɪnts/",part:"短语 noun phrase",meaning:"弱点；薄弱环节；不足之处（单数为 weak point）",scene:"分析能力、计划或论证的不足",example:"The review helped us identify the weak points in our plan.",translation:"这次评审帮助我们找出了计划中的薄弱环节。"},
       {type:"phrase",word:"pretty much",ipa:"/ˈprɪti mʌtʃ/",part:"短语 adverbial phrase",meaning:"几乎；差不多；基本上（常用于口语，表示程度很接近或大体如此）",scene:"表达近似程度或概括情况",example:"I’ve pretty much finished packing.",translation:"我差不多已经收拾完行李了。"},
       {type:"phrase",word:"for over a year now",ipa:"/fər ˈoʊvər ə jɪr naʊ/",part:"短语 time expression",meaning:"到现在已经超过一年；常与现在完成时连用，表示从过去持续到现在",scene:"描述持续至今的时间",example:"I’ve been learning English for over a year now.",translation:"到现在我学英语已经一年多了。"},
       {type:"phrase",word:"have / keep / get + noun + to oneself",ipa:"/tə wʌnˈself/",part:"句型 pattern",meaning:"have something to oneself：独自享有某物或拥有自己的时间；keep something to oneself：把某事留在心里、不告诉别人；get something to oneself：获得独自使用某物的机会。反身代词随主语变化（myself / yourself / himself 等）。",scene:"表达独自享有或保守某事",example:"I finally have some time to myself, so I can relax.",translation:"我终于有了属于自己的时间，可以放松一下。"},
@@ -284,6 +291,13 @@
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
+      "present":["at present（目前；现阶段）","be present at a meeting（出席会议）","present an idea / present someone with an award（介绍想法／授予某人奖项）"],
+      "supervisor":["direct supervisor（直属主管）","report to a supervisor（向主管汇报）","supervise a project（监督一个项目；supervise 是动词）"],
+      "mentor":["a career mentor（职业导师）","mentor someone（指导某人）","under the guidance of a mentor（在导师的指导下）"],
+      "approach":["a different approach to a problem（处理问题的不同方法）","approach someone about something（就某事与某人接洽）","as the deadline approaches（随着截止日期临近）"],
+      "win-win":["a win-win situation（双赢局面）","a win-win solution（双赢的解决方案）","find a win-win outcome（找到互利的结果）"],
+      "I'll be all set":["be all set（准备就绪；一切安排妥当）","I’m all set, thanks（我都准备好了，谢谢／我不需要了，谢谢）","That should be all I need（那些应该就是我需要的全部了）"],
+      "weak points":["identify your weak points（找出自己的弱点）","work on a weak point（改进一个薄弱环节）","weaknesses（弱点；不足，常用复数）"],
       "pretty much":["pretty much the same（几乎一样）","pretty much everyone（几乎所有人）","That’s pretty much it（大致就是这样）"],
       "for over a year now":["I’ve lived here for over a year now（我到现在住在这里一年多了）","for + 时间段：表示持续多久","常与现在完成时或现在完成进行时连用"],
       "have / keep / get + noun + to oneself":["have time to oneself（有属于自己的时间）","keep a secret to oneself（把秘密留在心里）","The whole room to myself（整个房间都由我独自使用）"],
