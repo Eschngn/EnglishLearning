@@ -37,6 +37,11 @@
   <script>
     // 数组按添加时间倒序排列（最新的在最前面），显示时直接按数组顺序展示。
     const words = [
+      {type:"word",word:"passionate",ipa:"/ˈpæʃənət/",part:"形容词 adjective",meaning:"充满热情的；热爱的；感情强烈的（be passionate about + 名词／动名词：热爱……；对……充满热情）",scene:"表达兴趣与热情",example:"I’m passionate about learning languages and connecting with people.",translation:"我热爱学习语言，也热衷于与人交流。"},
+      {type:"phrase",word:"pop into my head",ipa:"/pɑːp ˈɪntu maɪ hed/",part:"短语 verb phrase",meaning:"突然出现在我的脑海中；我突然想到（常指想法、名字或记忆不经意地浮现）",scene:"描述突然想到某事",example:"An idea popped into my head while I was taking a shower.",translation:"我洗澡时突然想到了一个点子。"},
+      {type:"phrase",word:"be into something",ipa:"/bi ˈɪntu ˈsʌmθɪŋ/",part:"短语 informal expression",meaning:"对某事感兴趣；喜欢某事（口语表达，into 后可接名词或动名词）",scene:"谈论兴趣与爱好",example:"I’m really into photography these days.",translation:"我最近特别喜欢摄影。"},
+      {type:"phrase",word:"side hustle",ipa:"/saɪd ˈhʌsəl/",part:"短语 noun phrase",meaning:"副业；兼职赚钱的工作（通常指主业之外赚取额外收入的活动）",scene:"谈论工作与额外收入",example:"She started selling handmade jewelry as a side hustle.",translation:"她开始把卖手工首饰作为副业。"},
+      {type:"phrase",word:"put in the effort",ipa:"/pʊt ɪn ði ˈefərt/",part:"短语 verb phrase",meaning:"付出努力；投入精力（强调为目标投入所需的努力）",scene:"谈论努力与目标",example:"If you put in the effort, you’ll gradually improve.",translation:"只要你付出努力，就会逐渐进步。"},
       {type:"word",word:"throat",ipa:"/θroʊt/",part:"名词 noun",meaning:"喉咙；咽喉；嗓音通道",scene:"描述身体部位或喉咙不适",example:"My throat is sore, so I’m going to drink some warm tea.",translation:"我的喉咙痛，所以我打算喝点热茶。"},
       {type:"word",word:"swallow",ipa:"/ˈswɑːloʊ/",part:"动词 / 名词 verb / noun",meaning:"v. 吞咽；咽下；相信或接受（说法）；n. 燕子",scene:"描述吞咽动作或接受说法",example:"It hurts when I swallow, so I’m eating soft food today.",translation:"我吞咽时会痛，所以今天吃软食。"},
       {type:"word",word:"inflammatory",ipa:"/ɪnˈflæmətɔːri/",part:"形容词 adjective",meaning:"炎症的；引起炎症的；煽动性的（anti-inflammatory 表示抗炎的、消炎的）",scene:"谈论健康、炎症或言论影响",example:"The doctor recommended an anti-inflammatory medicine for the swelling.",translation:"医生建议用抗炎药来缓解肿胀。"},
@@ -295,6 +300,11 @@
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
+      "passionate":["be passionate about something（热爱某事）","be passionate about doing something（热衷于做某事）","a passionate supporter（热情的支持者）"],
+      "pop into my head":["An idea popped into my head（我突然想到一个点子）","come to mind（浮现在脑海中；被想起）","pop into someone’s head（某人突然想到；物主代词随人称变化）"],
+      "be into something":["be really into music（非常喜欢音乐）","be into doing something（喜欢做某事）","be interested in something（对某事感兴趣；语气更中性）"],
+      "side hustle":["start a side hustle（开始做副业）","have a side hustle（有一份副业）","a side job（副业；兼职工作）"],
+      "put in the effort":["put in the effort to do something（付出努力去做某事）","make an effort（作出努力）","put time and effort into something（为某事投入时间和精力）"],
       "throat":["a sore throat（喉咙痛）","clear your throat（清清嗓子）","a lump in your throat（喉咙哽咽；如鲠在喉）"],
       "swallow":["swallow hard（用力吞咽；因紧张而咽口水）","swallow a pill（吞服药片）","swallow your pride（暂时放下自尊）"],
       "inflammatory":["anti-inflammatory drugs / medicine（抗炎药）","an inflammatory condition（炎症性疾病）","reduce inflammation（减轻炎症）"],
