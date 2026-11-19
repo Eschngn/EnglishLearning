@@ -37,6 +37,11 @@
   <script>
     // 数组按添加时间倒序排列（最新的在最前面），显示时直接按数组顺序展示。
     const words = [
+      {type:"word",word:"cough",ipa:"/kɔːf/",part:"动词 / 名词 verb / noun",meaning:"v. 咳嗽；n. 咳嗽；咳嗽声",scene:"描述身体不适与症状",example:"I’ve had a dry cough for a few days, and I keep coughing at night.",translation:"我干咳好几天了，晚上总是咳嗽。"},
+      {type:"word",word:"casually",ipa:"/ˈkæʒuəli/",part:"副词 adverb",meaning:"随意地；不拘礼节地；漫不经心地；若无其事地",scene:"描述穿着、交谈或行为方式",example:"She casually mentioned that she was moving to another city.",translation:"她随口提到自己要搬去另一个城市。"},
+      {type:"word",word:"scenery",ipa:"/ˈsiːnəri/",part:"名词 noun",meaning:"风景；景色；舞台布景（通常是不可数名词，谈自然风光时不说 a scenery 或 sceneries）",scene:"描述旅行与自然风光",example:"We stopped along the way to enjoy the mountain scenery.",translation:"我们在途中停下来欣赏山间风光。"},
+      {type:"phrase",word:"stick to",ipa:"/stɪk tuː/",part:"短语 phrasal verb",meaning:"坚持；遵守；不偏离（计划、承诺、话题等）；粘在……上（后接名词或动名词；stick 的过去式和过去分词为 stuck）",scene:"谈论坚持计划或遵守约定",example:"I’m trying to stick to my plan of practicing English every day.",translation:"我正努力坚持每天练习英语的计划。"},
+      {type:"phrase",word:"side by side",ipa:"/ˌsaɪd baɪ ˈsaɪd/",part:"短语 adverbial phrase",meaning:"并排地；肩并肩地；共同协作地",scene:"描述相对位置、协作或对比",example:"We walked side by side along the river.",translation:"我们沿着河边并肩散步。"},
       {type:"word",word:"passionate",ipa:"/ˈpæʃənət/",part:"形容词 adjective",meaning:"充满热情的；热爱的；感情强烈的（be passionate about + 名词／动名词：热爱……；对……充满热情）",scene:"表达兴趣与热情",example:"I’m passionate about learning languages and connecting with people.",translation:"我热爱学习语言，也热衷于与人交流。"},
       {type:"phrase",word:"pop into my head",ipa:"/pɑːp ˈɪntu maɪ hed/",part:"短语 verb phrase",meaning:"突然出现在我的脑海中；我突然想到（常指想法、名字或记忆不经意地浮现）",scene:"描述突然想到某事",example:"An idea popped into my head while I was taking a shower.",translation:"我洗澡时突然想到了一个点子。"},
       {type:"phrase",word:"be into something",ipa:"/bi ˈɪntu ˈsʌmθɪŋ/",part:"短语 informal expression",meaning:"对某事感兴趣；喜欢某事（口语表达，into 后可接名词或动名词）",scene:"谈论兴趣与爱好",example:"I’m really into photography these days.",translation:"我最近特别喜欢摄影。"},
@@ -300,6 +305,11 @@
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
+      "cough":["have a dry cough（干咳）","a coughing fit（一阵剧烈咳嗽）","cough up phlegm（咳出痰）"],
+      "casually":["dress casually（穿着休闲）","casually mention something（随口提到某事）","chat casually（随意地聊天）"],
+      "scenery":["beautiful scenery（美丽的风景）","enjoy the scenery（欣赏风景）","a change of scenery（换个环境；换换风景）"],
+      "stick to":["stick to a plan（坚持计划）","stick to doing something（坚持做某事）","stick to the point（紧扣重点；别跑题）"],
+      "side by side":["walk / sit side by side（并肩走／并排坐）","work side by side（并肩工作）","compare two photos side by side（把两张照片并排比较）"],
       "passionate":["be passionate about something（热爱某事）","be passionate about doing something（热衷于做某事）","a passionate supporter（热情的支持者）"],
       "pop into my head":["An idea popped into my head（我突然想到一个点子）","come to mind（浮现在脑海中；被想起）","pop into someone’s head（某人突然想到；物主代词随人称变化）"],
       "be into something":["be really into music（非常喜欢音乐）","be into doing something（喜欢做某事）","be interested in something（对某事感兴趣；语气更中性）"],
