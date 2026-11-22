@@ -37,6 +37,9 @@
   <script>
     // 数组按添加时间倒序排列（最新的在最前面），显示时直接按数组顺序展示。
     const words = [
+      {type:"word",word:"ginkgo",ipa:"/ˈɡɪŋkoʊ/",part:"名词 noun",meaning:"银杏；银杏树（复数常写作 ginkgos，也可写作 ginkgoes）",scene:"描述树木、秋景与植物",example:"The ginkgo trees along the street turn bright yellow in autumn.",translation:"街道两旁的银杏树到了秋天会变成明亮的黄色。"},
+      {type:"word",word:"maple",ipa:"/ˈmeɪpəl/",part:"名词 noun",meaning:"枫树；枫木（maple syrup 表示枫糖浆，maple leaf 表示枫叶）",scene:"描述树木、秋景与植物",example:"The maple leaves turned red and orange in the autumn sun.",translation:"枫叶在秋日阳光下变成了红色和橙色。"},
+      {type:"word",word:"packed",ipa:"/pækt/",part:"形容词 adjective",meaning:"挤满的；拥挤的；装满的；收拾好行李的（be packed with something 表示挤满／充满某物）",scene:"描述拥挤场所或装满的状态",example:"The train was packed with commuters during rush hour.",translation:"高峰时段，火车上挤满了通勤者。"},
       {type:"word",word:"cough",ipa:"/kɔːf/",part:"动词 / 名词 verb / noun",meaning:"v. 咳嗽；n. 咳嗽；咳嗽声",scene:"描述身体不适与症状",example:"I’ve had a dry cough for a few days, and I keep coughing at night.",translation:"我干咳好几天了，晚上总是咳嗽。"},
       {type:"word",word:"casually",ipa:"/ˈkæʒuəli/",part:"副词 adverb",meaning:"随意地；不拘礼节地；漫不经心地；若无其事地",scene:"描述穿着、交谈或行为方式",example:"She casually mentioned that she was moving to another city.",translation:"她随口提到自己要搬去另一个城市。"},
       {type:"word",word:"scenery",ipa:"/ˈsiːnəri/",part:"名词 noun",meaning:"风景；景色；舞台布景（通常是不可数名词，谈自然风光时不说 a scenery 或 sceneries）",scene:"描述旅行与自然风光",example:"We stopped along the way to enjoy the mountain scenery.",translation:"我们在途中停下来欣赏山间风光。"},
@@ -305,6 +308,9 @@
     ];
     // 单词展示高频搭配，词组展示相近表达或常用句型。
     const learningNotes = {
+      "ginkgo":["a ginkgo tree（一棵银杏树）","ginkgo leaves（银杏叶）","ginkgo nuts（银杏果；白果）"],
+      "maple":["a maple tree（一棵枫树）","maple leaves（枫叶）","maple syrup（枫糖浆）"],
+      "packed":["be packed with something（挤满／充满某物）","a packed train / room（拥挤的火车／房间）","fully packed（完全装满的；安排得满满的）"],
       "cough":["have a dry cough（干咳）","a coughing fit（一阵剧烈咳嗽）","cough up phlegm（咳出痰）"],
       "casually":["dress casually（穿着休闲）","casually mention something（随口提到某事）","chat casually（随意地聊天）"],
       "scenery":["beautiful scenery（美丽的风景）","enjoy the scenery（欣赏风景）","a change of scenery（换个环境；换换风景）"],
